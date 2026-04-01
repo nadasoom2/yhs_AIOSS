@@ -702,6 +702,7 @@ class StudentAgent:
             print(f"[WARN] Gemini 초기화 실패: {e}")
         return None
 
+
     def _init_embedder(self) -> Any:
         if SentenceTransformer is None:
             print(f"[WARN] sentence-transformers 없음, 폴백 임베더 사용: {_ST_ERROR}")
@@ -711,6 +712,8 @@ class StudentAgent:
         except Exception as e:
             print(f"[WARN] SentenceTransformer 실패, 폴백 임베더 사용: {e}")
             return FallbackEmbedder()
+
+
 
     # ── 핵심 메서드 ─────────────────────────────────────────────
 
@@ -736,6 +739,9 @@ class StudentAgent:
         t0     = time.perf_counter()
         intent = self._classifier.classify(query)
 
+        #  쿼리플랜 타임스탬프
+        print(f"[시간] 의도 분류: {time.perf_counter()-t0:.3f}s")
+
         # ── 상태 갱신 의도: DB 검색 없이 프로필만 업데이트 ──
         if intent == Intent.STATUS_UPDATE:
             profile = self._parser.update(query, profile)
@@ -755,8 +761,12 @@ class StudentAgent:
         # ── 일반 의도: RAG 검색 + 답변 생성 ──
 
         # 3단계: RAG 검색 (카테고리 라우팅 → 청크 수집 → 하이브리드 Top-K)
+        t_rag = time.perf_counter()
         enriched_query = self._enrich_query(query, profile)
         chunks, source_labels = self._retriever.retrieve(enriched_query, top_k=TOP_K)
+        # embedding 타임스탬프
+        print(f"[시간] RAG 검색: {time.perf_counter()-t_rag:.3f}s")
+
 
         # 근거 부족 판정
         best_score = float(chunks[0][1]) if chunks else 0.0
@@ -778,12 +788,17 @@ class StudentAgent:
             }
 
         # 4단계: 답변 생성
+        t_llm = time.perf_counter()
         prompt = self._prompter.build(query, intent, profile, history, chunks, source_labels)
         answer = self._generate(query, prompt)
+        #카테고리 검색 타임스탬프
+        print(f"[시간] Gemini 답변 생성: {time.perf_counter()-t_llm:.3f}s")
 
         # 5단계: 상태 업데이트
         history = self._append_history(history, query, answer)
 
+        #총 타임스탬프
+        print(f"[시간] 전체 총합: {time.perf_counter()-t0:.3f}s")
         return {
             "answer":      answer,
             "intent":      intent.value,

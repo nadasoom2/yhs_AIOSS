@@ -1,0 +1,2 @@
+{"ts": "2026-04-01T10:28:41Z", "agent": "hybrid_query_agent", "path": "fast", "elapsed_sec": 4.745, "best_score": 0.2777, "evidence_count": 36}
+{"ts": "2026-04-01T10:30:07Z", "agent": "hybrid_query_agent", "path": "deep", "elapsed_sec": 4.364, "best_score": 0.0838, "evidence_count": 36}
