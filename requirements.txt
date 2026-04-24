@@ -1,6 +1,7 @@
 neo4j==5.20.0
 google-generativeai
 pdfplumber
+pypdf
 numpy
 scikit-learn
 sentence-transformers==3.0.1

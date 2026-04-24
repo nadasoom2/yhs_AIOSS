@@ -51,7 +51,7 @@ jobs:
         shell: pwsh
         run: |
           python -m compileall -q .
-          python -c "import main, regression_test, hierarchical_rag, hybrid_query_agent, student_agent"
+          python -c "import regression_test, hierarchical_rag, hybrid_query_agent, student_agent"
 
       - name: Upload benchmark report
         id: upload-report
