@@ -32,7 +32,7 @@
 
 ### Change Failure Rate
 
-![Change Failure Rate](./images/dora/change-failure-rate.png)
+![Change Failure Rate] ![alt text](change_failure_rate.png)
 
 ### Mean Time to Restore!
 
