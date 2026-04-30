@@ -11,7 +11,16 @@ jobs:
   track-deployment:
     runs-on: ubuntu-latest
     steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: deployment-manifest
+          path: ./downloaded-artifact
+ 
       - name: Log Deployment
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
           echo "Deployment at: $(date)"
           echo "Event: ${{ github.event_name }}"
