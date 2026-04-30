@@ -90,7 +90,7 @@
 
 ---
 
-## Selective Deploy 결과
+### Selective Deploy 결과
 
 | 항목 | 내용 |
 |------|------|
@@ -100,7 +100,7 @@
 
 ---
 
-## 실행 흐름
+### 실행 흐름
 
 ```
 Matrix: build (ubuntu + windows)
@@ -111,3 +111,6 @@ Selective deploy ──← Detect deployable changes
 ```
 
 ---
+
+### 결과 화면
+![alt text](CI_CD_result.png)
