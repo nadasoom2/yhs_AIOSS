@@ -1,5 +1,5 @@
 {
-  "name": "@yhs-aioss/agent-runtime",
+  "name": "@nadasoom2/agent-runtime",
   "version": "1.0.0",
   "description": "International Student Life Admin AI Agent System - RAG & Multi-Agent Orchestration",
   "main": "agent_runtime.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/yhs_AIOSS"
+    "url": "https://github.com/nadasoom2/yhs_AIOSS"
   },
   "keywords": [
     "ai-agent",
