@@ -1,0 +1,32 @@
+{
+  "name": "@yhs-aioss/agent-runtime",
+  "version": "1.0.0",
+  "description": "International Student Life Admin AI Agent System - RAG & Multi-Agent Orchestration",
+  "main": "agent_runtime.js",
+  "author": "Dongguk University",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/yhs_AIOSS"
+  },
+  "keywords": [
+    "ai-agent",
+    "rag",
+    "multi-agent",
+    "chatbot",
+    "international-student"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@snyk/cli": "^1.1250.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

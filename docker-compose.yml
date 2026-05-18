@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yhs-aioss-agent
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    networks:
+      - aioss-network
+
+networks:
+  aioss-network:
+    driver: bridge
+
+volumes:
+  logs:
+  data:

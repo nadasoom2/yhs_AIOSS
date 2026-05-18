@@ -1,0 +1,207 @@
+name: Security Scan
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  schedule:
+    - cron: '0 2 * * 1'  # Weekly on Monday at 2 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  issues: write
+
+jobs:
+  npm-audit:
+    runs-on: ubuntu-latest
+    name: NPM Audit Scan
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts || npm install
+
+      - name: Run npm audit
+        id: audit
+        run: |
+          npm audit --json > audit-report.json || true
+          npm audit --audit-level=moderate || echo "Vulnerabilities found"
+
+      - name: Upload npm audit report
+        uses: actions/upload-artifact@v3
+        with:
+          name: npm-audit-report
+          path: audit-report.json
+
+      - name: Parse and create issues for high vulnerabilities
+        if: always()
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          
+          try:
+              with open('audit-report.json', 'r') as f:
+                  audit_data = json.load(f)
+              
+              if 'vulnerabilities' in audit_data:
+                  high_vulns = [v for v in audit_data.get('vulnerabilities', {}).values() 
+                               if v.get('severity') in ['high', 'critical']]
+                  if high_vulns:
+                      print(f"⚠️ Found {len(high_vulns)} high/critical vulnerabilities")
+                      for vuln in high_vulns[:5]:  # Show first 5
+                          print(f"  - {vuln.get('name', 'Unknown')}: {vuln.get('title', 'No title')}")
+          except Exception as e:
+              print(f"Error parsing audit: {e}")
+          EOF
+
+  snyk-scan:
+    runs-on: ubuntu-latest
+    name: Snyk Security Scan
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Snyk security scan
+        uses: snyk/actions/python-3.11@master
+        continue-on-error: true
+        with:
+          args: --severity-threshold=high --json-file-output=snyk-results.json
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: Upload Snyk results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: snyk-results
+          path: snyk-results.json
+
+      - name: Create issue for vulnerabilities
+        if: failure() && github.event_name == 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            try {
+              const results = JSON.parse(fs.readFileSync('snyk-results.json', 'utf8'));
+              if (results.vulnerabilities && results.vulnerabilities.length > 0) {
+                const vulnCount = results.vulnerabilities.length;
+                const severity = results.vulnerabilities[0].severity;
+                
+                github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: `🔒 Security: ${vulnCount} vulnerabilities found (${severity})`,
+                  body: `Snyk security scan detected vulnerabilities:\n\n${results.vulnerabilities.slice(0, 5).map(v => `- **${v.title}** (${v.severity})`).join('\n')}\n\nFull report: See artifacts`,
+                  labels: ['security', 'automated']
+                });
+              }
+            } catch (e) {
+              console.log('Could not create issue:', e);
+            }
+
+  dependency-check:
+    runs-on: ubuntu-latest
+    name: Dependency Version Check
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check for outdated dependencies
+        run: npm outdated || echo "Dependency check complete"
+
+      - name: Generate dependency report
+        run: |
+          npm list --depth=0 --json > dependencies.json 2>/dev/null || npm list --depth=0 > dependencies.txt
+
+      - name: Upload dependency report
+        uses: actions/upload-artifact@v3
+        with:
+          name: dependency-report
+          path: |
+            dependencies.json
+            dependencies.txt
+
+  sarif-upload:
+    runs-on: ubuntu-latest
+    name: Upload SARIF Results
+    needs: [npm-audit, snyk-scan]
+    if: always()
+
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+
+      - name: List artifacts
+        run: ls -la */
+
+      - name: Create SARIF report
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          
+          # Create SARIF report template
+          sarif_report = {
+              "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+              "version": "2.1.0",
+              "runs": [{
+                  "tool": {
+                      "driver": {
+                          "name": "Security Scanners",
+                          "version": "1.0.0",
+                          "informationUri": "https://github.com/yourusername/yhs_AIOSS"
+                      }
+                  },
+                  "results": []
+              }]
+          }
+          
+          # Try to parse npm audit results
+          try:
+              if os.path.exists('npm-audit-report/audit-report.json'):
+                  with open('npm-audit-report/audit-report.json', 'r') as f:
+                      audit = json.load(f)
+                      if 'vulnerabilities' in audit:
+                          for vuln_name, vuln in audit['vulnerabilities'].items():
+                              sarif_report['runs'][0]['results'].append({
+                                  "ruleId": f"npm-{vuln_name}",
+                                  "message": {"text": f"Vulnerability in {vuln_name}"},
+                                  "level": "error" if vuln.get('severity') in ['critical', 'high'] else "warning"
+                              })
+          except Exception as e:
+              print(f"Error parsing npm audit: {e}")
+          
+          with open('results.sarif', 'w') as f:
+              json.dump(sarif_report, f, indent=2)
+          
+          print("SARIF report created")
+          EOF
+
+      - name: Upload to GitHub Security
+        uses: github/codeql-action/upload-sarif@v2
+        if: always()
+        with:
+          sarif_file: results.sarif
