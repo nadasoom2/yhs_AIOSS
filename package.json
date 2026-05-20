@@ -24,7 +24,7 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
-    "@snyk": "^1.1250.0"
+    "snyk": "^1.1250.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
