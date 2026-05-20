@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Optional tag name (e.g. v1.0.1) - when provided, release will be created for this tag'
+        required: false
+        default: ''
 
 jobs:
   publish:
@@ -25,6 +30,27 @@ jobs:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com'
 
+      - name: Set package.json version from tag or input
+        if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag != '')
+        env:
+          DISPATCH_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          echo "GITHUB_EVENT_NAME=$GITHUB_EVENT_NAME"
+          echo "GITHUB_REF=$GITHUB_REF"
+          if [ "$GITHUB_EVENT_NAME" = "push" ] && [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ "${DISPATCH_TAG}" != "" ]; then
+            VERSION=${DISPATCH_TAG#v}
+          else
+            VERSION=""
+          fi
+          echo "Detected version: $VERSION"
+          if [ -n "$VERSION" ]; then
+            npm version "$VERSION" --no-git-tag-version
+            node -e "console.log(require('./package.json').version)"
+          fi
+        shell: bash
+
 
       - name: Install dependencies
         run: npm install
@@ -35,17 +61,39 @@ jobs:
       - name: Build package
         run: npm run build || echo "No build script defined"
 
+      - name: Create package tarball (for evidence)
+        run: |
+          npm pack
+        shell: bash
+
+      - name: Upload package tarball
+        uses: actions/upload-artifact@v3
+        with:
+          name: package-tarball
+          path: '*.tgz'
+
       - name: Publish to npm
-        run: npm publish --registry=https://npm.pkg.github.com
+        run: |
+          set -o pipefail || true
+          npm publish --registry=https://npm.pkg.github.com 2>&1 | tee publish-log.txt
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+
+      - name: Upload publish log
+        uses: actions/upload-artifact@v3
+        with:
+          name: publish-log
+          path: publish-log.txt
 
       - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag != '')
         uses: softprops/action-gh-release@v1
         with:
           files: |
             package.json
             README.md
           generate_release_notes: true
+          tag_name: ${{ github.event.inputs.tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
