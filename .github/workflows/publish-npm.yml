@@ -82,8 +82,10 @@ jobs:
       - name: Publish to npm
         run: |
           set -o pipefail
+          set +e
           npm publish --registry=https://npm.pkg.github.com 2>&1 | tee publish-log.txt
           EXIT_CODE=${PIPESTATUS[0]}
+          set -e
           if [ "$EXIT_CODE" -ne 0 ]; then
             if grep -Eq "E409|Cannot publish over existing version" publish-log.txt; then
               echo "Package version already exists in GitHub Packages; treating as successful rerun."
