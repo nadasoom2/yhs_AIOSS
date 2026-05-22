@@ -49,25 +49,38 @@ jobs:
 
       - name: Parse and create issues for high vulnerabilities
         if: always()
-        run: |
-          python3 << 'EOF'
-          import json
-          import os
-          
-          try:
-              with open('audit-report.json', 'r') as f:
-                  audit_data = json.load(f)
-              
-              if 'vulnerabilities' in audit_data:
-                  high_vulns = [v for v in audit_data.get('vulnerabilities', {}).values() 
-                               if v.get('severity') in ['high', 'critical']]
-                  if high_vulns:
-                      print(f"⚠️ Found {len(high_vulns)} high/critical vulnerabilities")
-                      for vuln in high_vulns[:5]:  # Show first 5
-                          print(f"  - {vuln.get('name', 'Unknown')}: {vuln.get('title', 'No title')}")
-          except Exception as e:
-              print(f"Error parsing audit: {e}")
-          EOF
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            try {
+              const auditData = JSON.parse(fs.readFileSync('audit-report.json', 'utf8'));
+              const highVulns = Object.values(auditData.vulnerabilities || {}).filter(
+                vuln => ['high', 'critical'].includes(vuln.severity)
+              );
+
+              if (highVulns.length === 0) {
+                console.log('No high or critical npm audit vulnerabilities found.');
+                return;
+              }
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🔎 npm audit: ${highVulns.length} high/critical vulnerabilities found`,
+                body: [
+                  'Automated npm audit detected high/critical vulnerabilities.',
+                  '',
+                  ...highVulns.slice(0, 5).map(vuln => `- **${vuln.name || 'Unknown'}** (${vuln.severity})`),
+                  '',
+                  'Full report: see the `npm-audit-report` artifact.'
+                ].join('\n'),
+                labels: ['security', 'npm-audit', 'automated']
+              });
+            } catch (error) {
+              console.log(`Error parsing audit: ${error}`);
+            }
 
   snyk-scan:
     runs-on: ubuntu-latest
@@ -93,24 +106,28 @@ jobs:
           path: snyk-results.json
 
       - name: Create issue for vulnerabilities
-        if: failure() && github.event_name == 'push'
+        if: always() && github.event_name == 'push'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
             try {
               const results = JSON.parse(fs.readFileSync('snyk-results.json', 'utf8'));
-              if (results.vulnerabilities && results.vulnerabilities.length > 0) {
-                const vulnCount = results.vulnerabilities.length;
-                const severity = results.vulnerabilities[0].severity;
+              const vulnerabilities = results.vulnerabilities || [];
+
+              if (vulnerabilities.length > 0) {
+                const vulnCount = vulnerabilities.length;
+                const severity = vulnerabilities[0].severity;
                 
                 github.rest.issues.create({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   title: `🔒 Security: ${vulnCount} vulnerabilities found (${severity})`,
-                  body: `Snyk security scan detected vulnerabilities:\n\n${results.vulnerabilities.slice(0, 5).map(v => `- **${v.title}** (${v.severity})`).join('\n')}\n\nFull report: See artifacts`,
+                  body: `Snyk security scan detected vulnerabilities:\n\n${vulnerabilities.slice(0, 5).map(v => `- **${v.title}** (${v.severity})`).join('\n')}\n\nFull report: See artifacts`,
                   labels: ['security', 'automated']
                 });
+              } else {
+                console.log('No Snyk vulnerabilities found.');
               }
             } catch (e) {
               console.log('Could not create issue:', e);
@@ -201,7 +218,8 @@ jobs:
           EOF
 
       - name: Upload to GitHub Security
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v4
         if: always()
         with:
           sarif_file: results.sarif
+          category: security-scanners
