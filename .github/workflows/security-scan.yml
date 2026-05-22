@@ -146,6 +146,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install dependencies
+        run: npm ci --ignore-scripts || npm install --ignore-scripts
+
       - name: Check for outdated dependencies
         run: npm outdated || echo "Dependency check complete"
 
