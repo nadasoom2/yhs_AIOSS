@@ -31,25 +31,32 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Set package.json version from tag or input
+        id: release_version
         if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag != '')
         env:
           DISPATCH_TAG: ${{ github.event.inputs.tag }}
+        shell: bash
         run: |
           echo "GITHUB_EVENT_NAME=$GITHUB_EVENT_NAME"
           echo "GITHUB_REF=$GITHUB_REF"
+
           if [ "$GITHUB_EVENT_NAME" = "push" ] && [[ "$GITHUB_REF" == refs/tags/v* ]]; then
-            VERSION=${GITHUB_REF#refs/tags/v}
-          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ "${DISPATCH_TAG}" != "" ]; then
+            TAG_NAME=${GITHUB_REF#refs/tags/}
+            VERSION=${TAG_NAME#v}
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ -n "${DISPATCH_TAG}" ]; then
+            TAG_NAME=${DISPATCH_TAG}
             VERSION=${DISPATCH_TAG#v}
           else
-            VERSION=""
+            echo "No release tag detected; stopping publish workflow."
+            exit 1
           fi
+
+          echo "Detected tag: $TAG_NAME"
           echo "Detected version: $VERSION"
-          if [ -n "$VERSION" ]; then
-            npm version "$VERSION" --no-git-tag-version
-            node -e "console.log(require('./package.json').version)"
-          fi
-        shell: bash
+          npm pkg set version="$VERSION"
+          node -e "console.log(require('./package.json').version)"
+          echo "tag_name=$TAG_NAME" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
 
       - name: Install dependencies
@@ -87,13 +94,13 @@ jobs:
           path: publish-log.txt
 
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag != '')
+        if: steps.release_version.outputs.tag_name != ''
         uses: softprops/action-gh-release@v1
         with:
           files: |
             package.json
             README.md
           generate_release_notes: true
-          tag_name: ${{ github.event.inputs.tag }}
+          tag_name: ${{ steps.release_version.outputs.tag_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
