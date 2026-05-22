@@ -1,117 +1,69 @@
 # 유학생 생활·행정 안내 AI 에이전트
 
-동아대학교 유학생이 한국 생활에서 마주치는 행정 문제를 **자신의 언어로 질문하면** 정확한 답변을 받을 수 있는 AI 챗봇 시스템입니다.
+동아대학교 유학생이 한국 생활에서 마주치는 행정 문제를 자신의 언어로 질문하면, 관련 정보를 찾아 답변하는 AI 에이전트입니다.
+
+이 저장소는 9주차 과제 제출용으로, 다음 3가지 요구사항을 충족하도록 정리되어 있습니다.
+모든 설정과 확인 링크는 main 브랜치 기준으로 작성되어 있습니다.
 
 ---
 
-## 왜 만들었는가
+## 과제 요구사항 정리
 
-한국에 온 유학생은 해결해야 할 행정 문제가 많습니다.
+### 1. npm 패키지를 GitHub Packages에 배포하고 버전 업데이트까지 수행
 
-- 외국인등록증은 언제 어디서 만드는지, 재발급은 어떻게 받는지
-- D-4 비자로 아르바이트를 할 수 있는지
-- 건강보험료를 꼭 내야하는지, 밀리면 어떻게 해야하는지
+- `package.json`의 버전을 `1.0.0 -> 1.0.1`로 업데이트하는 흐름을 포함합니다.
+- GitHub Actions의 `publish-npm.yml`에서 태그 기반 배포를 수행합니다.
+- GitHub Packages에 `@nadasoom2/agent-runtime` 패키지가 업로드되도록 구성되어 있습니다.
+- 배포 결과와 태그는 아래 링크에서 확인할 수 있습니다.
 
-이런 정보들은 학교 홈페이지, 출입국 사무소, 하이코리아 등 여러 사이트 곳곳에 흩어져 있고, 대부분 한국어로만 제공됩니다. 유학생 담당 부서에 직접 찾아가거나, 같은 나라의 유학생 커뮤니티 선배에 물어보거나, 번역기를 돌려가며 직접 찾아야 하는 상황입니다.
+확인 링크
+- GitHub Tags: https://github.com/nadasoom2/yhs_AIOSS/tags
+- GitHub Packages: https://github.com/nadasoom2/yhs_AIOSS/pkgs/npm/agent-runtime
+- publish 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/publish-npm.yml
 
-**이 프로젝트는 그 과정을 대신합니다.**
-
----
-
-## 무엇을 하는 시스템인가
-
-유학생이 자신의 언어(한국어, 영어, 중국어 등)로 질문을 입력하면, 시스템이 질문의 의도를 파악하고 관련 행정 정보를 찾아 답변을 생성합니다.
-
-```
-"Can I work part-time with D-4 visa?"
-    ↓
-"D-4 비자의 경우 입국 후 6개월이 경과한 후 시간제취업이 가능,
- 학기 중에는 주 20시간 이내로 제한, TOPIK 2급 이상이 필요"
-    ↓
-"If you hold a D-4 visa, part-time employment is permitted after 6 months have passed since the exclusion period.
- Work is limited to a maximum of 20 hours per week during the semester, and TOPIK Level 2 is required."
-```
-
-단순한 FAQ 검색이 아닙니다. 비자 유형에 따라 조건이 달라지는 행정 정보의 특성을 반영해서, **질문한 학생의 상황에 맞는 답변**을 만들어냅니다.
-
-
-행정 절차는 순서대로 처리해야 하는 업무입니다.
-```
-"비자 연장 어떻게 해?"
-    ↓
-1단계. 비자 만료 4주 전 — 하이코리아(HiKorea) 접속 후 신청서 작성
-2단계. 서류 준비
-3단계. 부산출입국·외국인청 방문 또는 온라인 제출
-4단계. 처리 기간 약 2주 — 문자로 결과 통보
-
-- 준비 해야할 서류 목록 CHECKLIST
-    [] 여권 원본
-    [] 외국인등록증
-    [] 재학증명서 (발급일 3개월 이내)
-    [] 수수료 60,000원
-```
-우리 YHS는 해야 할 일과 준비 서류를 단계별 체크리스트 형태로 함께 제공합니다. 
-한국에 온 유학생이 무엇을 언제 해야 하는지 몰라서 기한을 놓치거나 서류를 빠뜨리는 상황을 방지하기 위해서입니다.
+관련 파일
+- [package.json](package.json) - `package.json`
+- [.github/workflows/publish-npm.yml](.github/workflows/publish-npm.yml) - `.github/workflows/publish-npm.yml`
 
 ---
 
-## 핵심 설계 결정 세 가지
+### 2. Docker 이미지를 자동 빌드/푸시하고 로컬 실행을 검증
 
-### 1. 다국어 처리는 LLM 번역 대신 매핑 DB로
+- Dockerfile을 기반으로 이미지가 자동 빌드됩니다.
+- GitHub Actions의 `docker.yml`에서 이미지 빌드 및 푸시를 수행합니다.
+- `docker-compose.yml`로 로컬 실행과 헬스체크를 검증할 수 있습니다.
 
-외국어 질문이 들어올 때마다 LLM으로 번역하면 비용과 시간이 낭비됩니다. 그래서 `variable_dictionary`라는 다국어 매핑 테이블을 만들었습니다. 'part-time', '打工', '알바' 같은 표현들이 모두 '시간제취업허가'라는 한국어 표준 용어로 연결되어 있습니다.
+확인 링크
+- Docker 이미지 레지스트리: (여기에 입력)
+- Docker 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/docker.yml
 
-처음 보는 단어가 들어오면 그때만 LLM을 호출해서 번역하고, 결과를 DB에 저장합니다. 이후 같은 표현이 들어오면 LLM 없이 즉시 처리됩니다. 시스템을 쓸수록 LLM 호출이 줄어드는 구조입니다.
-
-### 2. 행정 정보는 일반 검색 대신 지식 그래프로
-
-유학생 행정 정보는 서로 연결되어 있습니다. '아르바이트'를 알려면 비자 유형을 확인해야 하고, 비자 유형에 따라 허용 시간과 필요 서류가 달라집니다. 이런 계층적 관계를 표현하기 위해 Neo4j 지식 그래프를 사용합니다. 단순히 비슷한 문서를 찾는 것이 아니라, 연결된 맥락을 구조적으로 탐색합니다.
-
-### 3. 답변 신뢰도에 따라 탐색 깊이를 조절
-
-모든 질문에 동일한 비용을 쓰는 건 비효율적입니다. 지식 그래프에서 충분히 좋은 정보를 찾으면 바로 답변을 생성하고(Fast Path), 부족하면 탐색 범위를 넓히고(Deep Path), 그래도 부족하면 학교 홈페이지를 직접 크롤링합니다. 빠르게 처리할 수 있는 건 빠르게, 깊이 찾아야 하는 건 깊이 찾는 구조입니다.
-
----
-
-## 현재 범위
-
-- **대상**: 동아대학교 유학생
-- **지원 언어**: 한국어, 영어, 중국어
-- **지원 비자**: D-2, D-4, D-4-1, D-4-7
-- **다루는 주제**: 비자 연장, 외국인등록, 시간제취업허가, 건강보험, 입학/졸업 행정 등
+관련 파일
+- [Dockerfile](Dockerfile) - `Dockerfile`
+- [docker-compose.yml](docker-compose.yml) - `docker-compose.yml`
+- [.github/workflows/docker.yml](.github/workflows/docker.yml) - `.github/workflows/docker.yml`
 
 ---
 
-## 기술 스택
+### 3. Dependabot 정책과 보안 스캔 결과 자동화
 
-| | |
-|---|---|
-| 백엔드 | Python, FastAPI |
-| 지식 그래프 | Neo4j |
-| 벡터 DB | PostgreSQL + pgvector |
-| LLM | Gemini, GPT-4o-mini |
-| 임베딩 | OpenAI text-embedding-3-small |
-| 크롤링 | Playwright |
+- `.github/dependabot.yml`에서 업데이트 스케줄을 관리합니다.
+- npm, Python, Docker, GitHub Actions 업데이트를 분리해서 관리합니다.
+- 그룹 설정을 통해 업데이트를 묶어서 처리합니다.
+- `security-scan.yml`에서 npm audit와 Snyk를 실행합니다.
+- 결과는 아티팩트와 SARIF로 저장되며, 고위험 취약점은 GitHub Issue로 자동 생성됩니다.
 
----
+확인 링크
+- Dependabot 설정: https://github.com/nadasoom2/yhs_AIOSS/blob/main/.github/dependabot.yml
+- Security Scan 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/security-scan.yml
+- 생성된 이슈 또는 보안 리포트: https://github.com/nadasoom2/yhs_AIOSS/actions/runs/26293184322
 
-## 시작하기
-
-```bash
-# 저장소 클론
-git clone https://github.com/your-org/your-repo.git
-cd your-repo
-
-# 환경 변수 설정
-cp .env.example .env
-
-# 의존성 설치 및 실행
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+관련 파일
+- [.github/dependabot.yml](.github/dependabot.yml) - `.github/dependabot.yml`
+- [.github/workflows/security-scan.yml](.github/workflows/security-scan.yml) - `.github/workflows/security-scan.yml`
 
 ---
+
 
 ## 기여
 
-이슈나 PR은 언제든 환영합니다. 기여 전 [CONTRIBUTING.md](CONTRIBUTING.md)를 먼저 확인해 주십시오.
+이 저장소는 과제 제출용으로 정리되었습니다. 기여 전에는 별도 안내 문서를 확인해 주세요.
