@@ -74,7 +74,7 @@ jobs:
         shell: bash
 
       - name: Upload package tarball
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: package-tarball
           path: '*.tgz'
@@ -88,7 +88,7 @@ jobs:
         shell: bash
 
       - name: Upload publish log
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: publish-log
           path: publish-log.txt
