@@ -12,18 +12,18 @@
 - GitHub Packages에 `@nadasoom2/agent-runtime` 패키지가 업로드되도록 구성되어 있습니다.
 - 배포 결과와 태그는 아래 링크에서 확인할 수 있습니다.
 
-npm 배포 자동화 (publish-npm.yml)
+1) npm 배포 자동화 (publish-npm.yml)
 - **트리거:** Git tag 생성 (v*.*.*)
 - **버전 업데이트:** tag에서 자동 추출
 - **배포 대상:** GitHub Packages (@yhs-aioss/agent-runtime)
 - **인증:** GITHUB_TOKEN (자동)
 
-확인 링크
+2) 확인 링크
 - GitHub Tags: https://github.com/nadasoom2/yhs_AIOSS/tags
 - GitHub Packages: https://github.com/nadasoom2/yhs_AIOSS/pkgs/npm/agent-runtime
 - publish 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/publish-npm.yml
 
-관련 파일
+3) 관련 파일
 - [package.json](package.json) - `package.json`
 - [.github/workflows/publish-npm.yml](.github/workflows/publish-npm.yml) - `.github/workflows/publish-npm.yml`
 
@@ -35,30 +35,30 @@ npm 배포 자동화 (publish-npm.yml)
 - GitHub Actions의 `docker.yml`에서 이미지 빌드 및 푸시를 수행합니다.
 - `docker-compose.yml`로 로컬 실행과 헬스체크를 검증할 수 있습니다.
 
-Docker 자동 빌드/푸시 (docker.yml)
+1) Docker 자동 빌드/푸시 (docker.yml)
 - **트리거:** main/develop 브랜치 push, tag, PR
 - **저장소:** GitHub Container Registry (ghcr.io)
 - **로컬 테스트:** PR에서 자동 검증
 - **태그:** branch, semver, SHA 기반 자동 생성
 
-보안 자동화 (security-scan.yml)
+2) 보안 자동화 (security-scan.yml)
 - **npm audit:** 매 주 월요일 + 매 push 시 실행
 - **Snyk:** 고위험 취약점 자동 감지
 - **SARIF 리포트:** GitHub Security에 자동 업로드
 - **이슈 생성:** 중대 취약점 발견 시 자동 이슈 생성
 
-Dependabot 설정 (dependabot.yml)
+3) Dependabot 설정 (dependabot.yml)
 - **npm:** 주 1회 (월요일 3:00 UTC)
 - **Python:** 주 1회 (월요일 3:30 UTC)
 - **Docker:** 주 1회 (월요일 4:00 UTC)
 - **GitHub Actions:** 주 1회 (월요일 4:30 UTC)
 - **자동 머지:** dev/patch 업데이트만 자동 승인
 
-확인 링크
+4) 확인 링크
 - Docker 이미지 레지스트리: https://github.com/nadasoom2/yhs_AIOSS/pkgs/container/yhs_aioss
 - Docker 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/docker.yml
 
-관련 파일
+5) 관련 파일
 - [Dockerfile](Dockerfile) - `Dockerfile`
 - [docker-compose.yml](docker-compose.yml) - `docker-compose.yml`
 - [.github/workflows/docker.yml](.github/workflows/docker.yml) - `.github/workflows/docker.yml`
@@ -73,12 +73,12 @@ Dependabot 설정 (dependabot.yml)
 - `security-scan.yml`에서 npm audit와 Snyk를 실행합니다.
 - 결과는 아티팩트와 SARIF로 저장되며, 고위험 취약점은 GitHub Issue로 자동 생성됩니다.
 
-확인 링크
+1) 확인 링크
 - Dependabot 설정: https://github.com/nadasoom2/yhs_AIOSS/blob/main/.github/dependabot.yml
 - Security Scan 워크플로 실행 결과: https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/security-scan.yml
 - 생성된 이슈 또는 보안 리포트: https://github.com/nadasoom2/yhs_AIOSS/actions/runs/26293184322
 
-관련 파일
+2) 관련 파일
 - [.github/dependabot.yml](.github/dependabot.yml) - `.github/dependabot.yml`
 - [.github/workflows/security-scan.yml](.github/workflows/security-scan.yml) - `.github/workflows/security-scan.yml`
 
