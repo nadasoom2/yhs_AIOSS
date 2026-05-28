@@ -1,7 +1,35 @@
 version: '3.9'
 
+# ── 풀스택 로컬 개발 / CI 환경 ────────────────────────────────────
+# 사용법:
+#   docker compose up --build          # 전체 스택 실행
+#   docker compose up frontend         # 프론트엔드만
+#   docker compose up backend          # 백엔드만
+
 services:
-  app:
+  # ── 프론트엔드 (React + Vite → nginx) ────────────────────────────
+  frontend:
+    build:
+      context: ./front/app
+      dockerfile: Dockerfile
+    container_name: yhs-aioss-frontend
+    ports:
+      - "3000:80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - aioss-network
+    labels:
+      - "com.yhs-aioss.service=frontend"
+      - "com.yhs-aioss.version=${APP_VERSION:-latest}"
+
+  # ── 백엔드 (Python RAG Agent) ─────────────────────────────────────
+  backend:
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,10 +38,22 @@ services:
       - "8000:8000"
     environment:
       - PYTHONUNBUFFERED=1
-      - LOG_LEVEL=INFO
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - NEO4J_URI=${NEO4J_URI:-bolt://neo4j:7687}
+      - NEO4J_USER=${NEO4J_USER:-neo4j}
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD}
+      - ENABLE_CRAWL=${ENABLE_CRAWL:-0}
+      - TOP_K=${TOP_K:-6}
+      - HISTORY_TURNS=${HISTORY_TURNS:-3}
+      - MIN_SCORE=${MIN_SCORE:-0.25}
+    env_file:
+      - .env
     volumes:
       - ./logs:/app/logs
       - ./data:/app/data
+      - ./pdf:/app/pdf:ro
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
@@ -21,8 +61,40 @@ services:
       retries: 3
       start_period: 40s
     restart: unless-stopped
+    depends_on:
+      neo4j:
+        condition: service_healthy
     networks:
       - aioss-network
+    labels:
+      - "com.yhs-aioss.service=backend"
+      - "com.yhs-aioss.version=${APP_VERSION:-latest}"
+
+  # ── Neo4j 그래프 DB ───────────────────────────────────────────────
+  neo4j:
+    image: neo4j:5.20-community
+    container_name: yhs-aioss-neo4j
+    ports:
+      - "7474:7474"   # Browser UI
+      - "7687:7687"   # Bolt
+    environment:
+      - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:-changeme}
+      - NEO4J_dbms_memory_heap_initial__size=256m
+      - NEO4J_dbms_memory_heap_max__size=512m
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "${NEO4J_USER:-neo4j}", "-p", "${NEO4J_PASSWORD:-changeme}", "RETURN 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped
+    networks:
+      - aioss-network
+    profiles:
+      - full   # `docker compose --profile full up` 으로 실행
 
 networks:
   aioss-network:
@@ -31,3 +103,5 @@ networks:
 volumes:
   logs:
   data:
+  neo4j-data:
+  neo4j-logs:
