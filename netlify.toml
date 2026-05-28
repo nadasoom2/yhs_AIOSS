@@ -1,0 +1,39 @@
+# ── Netlify 빌드 설정 ────────────────────────────────────────────
+# 프로젝트 루트에서 front/app을 빌드 대상으로 지정
+[build]
+  base    = "front/app"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ── SPA 라우팅 (React Router 대응) ──────────────────────────────
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# ── 환경별 설정 ──────────────────────────────────────────────────
+[context.production]
+  environment = { VITE_ENV = "production" }
+
+[context.deploy-preview]
+  environment = { VITE_ENV = "preview" }
+
+[context.branch-deploy]
+  environment = { VITE_ENV = "staging" }
+
+# ── 보안 헤더 ────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options         = "DENY"
+    X-Content-Type-Options  = "nosniff"
+    Referrer-Policy         = "strict-origin-when-cross-origin"
+    Cache-Control           = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,278 @@
+name: Cloud Deploy – AWS ECS (Production)
+
+# ── 트리거 ────────────────────────────────────────────────────────
+# main 머지 후 Docker 빌드가 완료되면 자동 실행
+on:
+  workflow_run:
+    workflows: ["Docker Build & Push"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy target environment'
+        required: true
+        default: 'production'
+        type: choice
+        options: [production, staging]
+      image_tag:
+        description: 'Docker image tag (leave blank for latest)'
+        required: false
+        default: ''
+
+env:
+  AWS_REGION: ap-northeast-2          # 서울 리전
+  ECR_REPOSITORY: yhs-aioss-backend
+  ECS_CLUSTER: yhs-aioss-cluster
+  ECS_SERVICE: yhs-aioss-service
+  CONTAINER_NAME: yhs-aioss-agent
+  GHCR_IMAGE: ghcr.io/${{ github.repository }}
+
+# ── 환경별 보호 규칙 ──────────────────────────────────────────────
+# GitHub Settings > Environments 에서 production에 required reviewers 설정 권장
+
+jobs:
+  # ── 사전 조건 확인 ────────────────────────────────────────────────
+  gate:
+    name: Deployment gate
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+      image-tag: ${{ steps.check.outputs.image-tag }}
+
+    steps:
+      - name: Resolve image tag
+        id: check
+        run: |
+          TAG="${{ github.event.inputs.image_tag }}"
+          if [ -z "$TAG" ]; then
+            TAG="sha-$(echo '${{ github.sha }}' | cut -c1-7)"
+          fi
+          echo "image-tag=$TAG" >> $GITHUB_OUTPUT
+          echo "proceed=true"   >> $GITHUB_OUTPUT
+          echo "Image tag: $TAG"
+
+  # ── AWS ECR 에 이미지 재태그 & 푸시 ──────────────────────────────
+  push-to-ecr:
+    name: Push image to ECR
+    needs: gate
+    if: needs.gate.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      ecr-image: ${{ steps.push.outputs.ecr-image }}
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull from GHCR and push to ECR
+        id: push
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ needs.gate.outputs.image-tag }}
+        run: |
+          GHCR_IMAGE="${{ env.GHCR_IMAGE }}:${IMAGE_TAG}"
+          ECR_IMAGE="${ECR_REGISTRY}/${{ env.ECR_REPOSITORY }}:${IMAGE_TAG}"
+          ECR_LATEST="${ECR_REGISTRY}/${{ env.ECR_REPOSITORY }}:latest"
+
+          docker pull "$GHCR_IMAGE"
+          docker tag  "$GHCR_IMAGE" "$ECR_IMAGE"
+          docker tag  "$GHCR_IMAGE" "$ECR_LATEST"
+          docker push "$ECR_IMAGE"
+          docker push "$ECR_LATEST"
+
+          echo "ecr-image=$ECR_IMAGE" >> $GITHUB_OUTPUT
+
+  # ── ECS Task Definition 업데이트 & 서비스 배포 ────────────────────
+  deploy-ecs:
+    name: Deploy to ECS
+    needs: [gate, push-to-ecr]
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.event.inputs.environment || 'production' }}
+      url: ${{ steps.service-url.outputs.url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Download current task definition
+        run: |
+          aws ecs describe-task-definition \
+            --task-definition ${{ env.CONTAINER_NAME }} \
+            --query taskDefinition \
+            > task-definition.json
+
+      - name: Inject new image into task definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          container-name: ${{ env.CONTAINER_NAME }}
+          image: ${{ needs.push-to-ecr.outputs.ecr-image }}
+          environment-variables: |
+            LOG_LEVEL=INFO
+            PYTHONUNBUFFERED=1
+
+      - name: Deploy to ECS service
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER }}
+          wait-for-service-stability: true
+          wait-for-minutes: 10
+
+      - name: Resolve service URL
+        id: service-url
+        run: |
+          LB_DNS=$(aws elbv2 describe-load-balancers \
+            --names yhs-aioss-alb \
+            --query 'LoadBalancers[0].DNSName' \
+            --output text 2>/dev/null || echo "N/A")
+          echo "url=http://${LB_DNS}" >> $GITHUB_OUTPUT
+          echo "Load balancer: $LB_DNS"
+
+  # ── 헬스체크 & 스모크 테스트 ──────────────────────────────────────
+  healthcheck:
+    name: Health check & smoke test
+    needs: [gate, deploy-ecs]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Wait for tasks to be healthy
+        run: |
+          echo "Waiting for ECS tasks to reach RUNNING state..."
+          aws ecs wait services-stable \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --services ${{ env.ECS_SERVICE }}
+          echo "All tasks are running."
+
+      - name: Verify ECS service health
+        run: |
+          RUNNING=$(aws ecs describe-services \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --services ${{ env.ECS_SERVICE }} \
+            --query 'services[0].runningCount' \
+            --output text)
+          DESIRED=$(aws ecs describe-services \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --services ${{ env.ECS_SERVICE }} \
+            --query 'services[0].desiredCount' \
+            --output text)
+
+          echo "Running: $RUNNING / Desired: $DESIRED"
+          if [ "$RUNNING" -lt "$DESIRED" ]; then
+            echo "ERROR: Not enough tasks running" >&2
+            exit 1
+          fi
+
+      - name: HTTP smoke test (health endpoint)
+        env:
+          SERVICE_URL: ${{ secrets.APP_HEALTH_ENDPOINT }}
+        run: |
+          for i in 1 2 3; do
+            STATUS=$(curl -sf -o /dev/null -w "%{http_code}" \
+              --max-time 10 "${SERVICE_URL}/health" || echo "000")
+            echo "Attempt $i: HTTP $STATUS"
+            if [ "$STATUS" = "200" ]; then
+              echo "Health check passed."
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "Health check failed after 3 attempts" >&2
+          exit 1
+
+      - name: Write deployment summary
+        if: always()
+        run: |
+          cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          ## Cloud Deployment Result
+
+          | Item | Value |
+          |------|-------|
+          | Environment | ${{ github.event.inputs.environment || 'production' }} |
+          | Image Tag | ${{ needs.gate.outputs.image-tag }} |
+          | Region | ${{ env.AWS_REGION }} |
+          | ECS Cluster | ${{ env.ECS_CLUSTER }} |
+          | ECS Service | ${{ env.ECS_SERVICE }} |
+          | Triggered By | ${{ github.actor }} |
+          | Run | [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+          EOF
+
+  # ── 배포 실패 시 자동 롤백 ────────────────────────────────────────
+  rollback:
+    name: Auto rollback on failure
+    needs: [deploy-ecs, healthcheck]
+    if: failure()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Rollback to previous task definition
+        run: |
+          PREV_REVISION=$(aws ecs describe-services \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --services ${{ env.ECS_SERVICE }} \
+            --query 'services[0].taskDefinition' \
+            --output text | awk -F: '{print $NF-1}')
+
+          TASK_DEF_FAMILY=$(aws ecs describe-services \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --services ${{ env.ECS_SERVICE }} \
+            --query 'services[0].taskDefinition' \
+            --output text | awk -F: '{print $1}' | awk -F/ '{print $NF}')
+
+          echo "Rolling back to ${TASK_DEF_FAMILY}:${PREV_REVISION}"
+
+          aws ecs update-service \
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --service ${{ env.ECS_SERVICE }} \
+            --task-definition "${TASK_DEF_FAMILY}:${PREV_REVISION}" \
+            --force-new-deployment
+
+          echo "Rollback initiated."
+
+      - name: Notify rollback
+        run: |
+          echo "## ROLLBACK TRIGGERED" >> $GITHUB_STEP_SUMMARY
+          echo "Deployment failed — automatically rolled back to previous task definition." >> $GITHUB_STEP_SUMMARY
