@@ -185,4 +185,4 @@ npm run dev
 
 - **플래그 코드**: https://github.com/nadasoom2/yhs_AIOSS/blob/main/front/app/src/config/featureFlags.js
 - **실험 코드**: https://github.com/nadasoom2/yhs_AIOSS/blob/main/front/app/src/config/experiments.js
-- **실험 로그(추적)**: https://github.com/nadasoom2/yhs_AIOSS/blob/main/front/app/src/utils/analytics.js
+- **실험 로그**: https://github.com/nadasoom2/yhs_AIOSS/blob/main/front/app/experiment-log.json
