@@ -1,6 +1,11 @@
 .env
 .env.*
 !.env.example
+!.env.local
+
+node_modules/
+front/app/node_modules/
+front/app/dist/
 
 __pycache__/
 */__pycache__/

@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useFeatureFlag } from "./hooks/useFeatureFlag";
+import { useABTest } from "./hooks/useABTest";
+import { track, EVENTS } from "./utils/analytics";
 
 /* ══════════════════════════════════════════════════════
    UniGuide AI — React Prototype
@@ -1473,6 +1476,120 @@ const globalStyles = `
     height: 6px;
     border-radius: 50%;
   }
+
+  /* ── Feature: Dark Mode ─────────────────────────────── */
+  .dark-mode {
+    --c-bg: #0F0F14;
+    --c-surface: #1A1A24;
+    --c-border: #2E2E3E;
+    --c-border-s: #3E3E52;
+    --c-t1: #E8E8F0;
+    --c-t2: #9090A8;
+    --c-t3: #5A5A72;
+    --c-accent-l: #1A2040;
+    --c-red-l: #2A1010;
+    --c-green-l: #0A1E14;
+    --c-amber-l: #201408;
+    --c-purple-l: #1A1030;
+  }
+  .dark-mode .status-bar,
+  .dark-mode .chat-input-bar,
+  .dark-mode .topbar,
+  .dark-mode .slim-header {
+    background: var(--c-surface);
+  }
+  html.dark-mode, body.dark-mode { background: #0A0A10; }
+
+  /* ── Feature: Voice Input Button ───────────────────── */
+  .voice-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--c-green-l);
+    border: 1.5px solid var(--c-border);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+    transition: transform .1s, background .15s;
+  }
+  .voice-btn:active { transform: scale(.92); }
+  .voice-btn.listening {
+    background: var(--c-red-l);
+    border-color: var(--c-red);
+    animation: pulse 1s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(209,59,59,.4); }
+    50%       { box-shadow: 0 0 0 6px rgba(209,59,59,0); }
+  }
+
+  /* ── Feature: Quick Replies ─────────────────────────── */
+  .quick-replies {
+    padding: 8px 14px 4px;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-shrink: 0;
+  }
+  .quick-replies::-webkit-scrollbar { display: none; }
+  .qr-chip {
+    white-space: nowrap;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: var(--c-accent-l);
+    color: var(--c-accent);
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background .12s;
+  }
+  .qr-chip:active { background: var(--c-accent-m); color: #fff; }
+
+  /* ── A/B Test: Chat Layout B (추천 질문 카드) ─────────── */
+  .suggested-qs {
+    padding: 12px 14px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .sq-label {
+    font-size: 11px;
+    color: var(--c-t3);
+    font-weight: 500;
+    letter-spacing: .3px;
+  }
+  .sq-cards {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .sq-cards::-webkit-scrollbar { display: none; }
+  .sq-card {
+    flex-shrink: 0;
+    width: 140px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: var(--c-bg);
+    border: 1.5px solid var(--c-border);
+    font-size: 13px;
+    color: var(--c-t1);
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    line-height: 1.4;
+    transition: border-color .12s;
+  }
+  .sq-card:active { border-color: var(--c-accent-m); }
 `;
 
 /* ── 캘린더 이벤트 데이터 (원본 JS와 동일) ── */
@@ -1710,6 +1827,18 @@ export default function UniGuideApp() {
   // 채널 메인 필터
   const [channelFilter, setChannelFilter] = useState('전체');
 
+  // ── Feature Flags ────────────────────────────────────
+  const voiceInputEnabled = useFeatureFlag('VOICE_INPUT');
+  const darkModeEnabled   = useFeatureFlag('DARK_MODE');
+  const quickRepliesEnabled = useFeatureFlag('QUICK_REPLIES');
+
+  // 음성 입력 활성 상태
+  const [voiceListening, setVoiceListening] = useState(false);
+
+  // ── A/B Tests ─────────────────────────────────────────
+  const { variant: welcomeVariant, trackInteraction: trackWelcome } = useABTest('WELCOME_MESSAGE');
+  const { variant: chatLayoutVariant, trackInteraction: trackChatLayout } = useABTest('CHAT_LAYOUT');
+
   const checkedCount = steps.filter(s => s.checked).length;
   const total = steps.length;
   const pct = Math.round(checkedCount / total * 100);
@@ -1771,6 +1900,31 @@ export default function UniGuideApp() {
     document.head.appendChild(styleEl);
     return () => document.head.removeChild(styleEl);
   }, []);
+
+  // 다크 모드 적용
+  useEffect(() => {
+    const el = document.querySelector('.iphone');
+    if (!el) return;
+    if (darkModeEnabled) {
+      el.classList.add('dark-mode');
+      track(EVENTS.DARK_MODE_SEEN, { enabled: true });
+    } else {
+      el.classList.remove('dark-mode');
+    }
+  }, [darkModeEnabled]);
+
+  // 음성 입력 핸들러
+  function handleVoiceInput() {
+    setVoiceListening(v => !v);
+    track(EVENTS.VOICE_INPUT_TRIGGERED, { action: voiceListening ? 'stop' : 'start' });
+    showToast(voiceListening ? '음성 입력을 중지했습니다' : '음성 입력을 시작합니다...');
+  }
+
+  // 빠른 답변 칩 클릭 핸들러
+  function handleQuickReply(text) {
+    track(EVENTS.QUICK_REPLY_CLICKED, { text });
+    showToast(`"${text}" 질문을 전송합니다`);
+  }
 
   return (
     <div className="iphone">
@@ -1919,6 +2073,11 @@ export default function UniGuideApp() {
           </div>
           <div className="chat-input-bar">
             <input className="c-input" id="visa-input" placeholder="비자 관련 질문하기..." />
+            {voiceInputEnabled && (
+              <button className={`voice-btn${voiceListening ? ' listening' : ''}`} onClick={handleVoiceInput}>
+                🎤
+              </button>
+            )}
             <button className="send-btn" onClick={() => showToast('메시지를 전송합니다')}>
               <SendIcon />
             </button>
@@ -2065,8 +2224,38 @@ export default function UniGuideApp() {
             <div id="main-chat-area" className="chat-area" style={{ paddingTop: 0 }} />
             <div style={{ height: '16px' }} />
           </div>
+
+          {/* A/B Test: CHAT_LAYOUT — Variant B: 추천 질문 카드 */}
+          {chatLayoutVariant === 'B' && (
+            <div className="suggested-qs">
+              <div className="sq-label">자주 묻는 질문</div>
+              <div className="sq-cards">
+                {['비자 연장 절차가 궁금해요', '외국인등록증 어디서 신청해요?', '건강보험 가입 방법 알려줘', '아르바이트 가능한가요?'].map(q => (
+                  <button key={q} className="sq-card" onClick={() => { trackChatLayout('sq_card_clicked', { question: q }); showToast(`"${q.slice(0, 10)}..." 질문을 전송합니다`); }}>
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Feature: QUICK_REPLIES — 빠른 답변 칩 */}
+          {quickRepliesEnabled && (
+            <div className="quick-replies">
+              {['비자 연장', '외국인등록', '건강보험', '아르바이트', '학교 행정'].map(t => (
+                <button key={t} className="qr-chip" onClick={() => handleQuickReply(t)}>{t}</button>
+              ))}
+            </div>
+          )}
+
           <div className="chat-input-bar">
             <input id="main-input" className="c-input" placeholder="무엇이든 질문하세요..." />
+            {/* Feature: VOICE_INPUT — 음성 입력 버튼 */}
+            {voiceInputEnabled && (
+              <button className={`voice-btn${voiceListening ? ' listening' : ''}`} onClick={handleVoiceInput}>
+                🎤
+              </button>
+            )}
             <button className="send-btn" onClick={() => showToast('메시지를 전송합니다')}>
               <SendIcon />
             </button>
@@ -2201,12 +2390,17 @@ export default function UniGuideApp() {
         {/* ⑧ ONBOARDING */}
         <div className={getScreenClass('s-onboarding')} id="s-onboarding">
           <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            {/* A/B Test: WELCOME_MESSAGE */}
             <div className="ob-hero">
-              <span className="ob-mark">🎓</span>
+              <span className="ob-mark">{welcomeVariant === 'B' ? '🤖' : '🎓'}</span>
               <div className="ob-h">UniGuide AI</div>
-              <div className="ob-p">한국 유학 생활, 더 쉽게<br />비자·학교·생활 모두 안내해드려요</div>
+              {welcomeVariant === 'A' ? (
+                <div className="ob-p">한국 유학 생활, 더 쉽게<br />비자·학교·생활 모두 안내해드려요</div>
+              ) : (
+                <div className="ob-p">AI 에이전트가 비자·행정 문제를<br />단번에 해결해드려요</div>
+              )}
             </div>
-            <button className="social-btn" onClick={() => showToast('Google 로그인 화면으로 이동합니다')}>
+            <button className="social-btn" onClick={() => { trackWelcome('google_login_clicked'); showToast('Google 로그인 화면으로 이동합니다'); }}>
               <span style={{ fontSize: '18px' }}>🌐</span> Google로 시작하기
             </button>
             <div style={{ padding: '0 16px 12px', textAlign: 'center', fontSize: '12px', color: 'var(--c-t3)' }}>카카오 로그인은 추후 지원 예정입니다</div>
@@ -2245,7 +2439,7 @@ export default function UniGuideApp() {
                 </div>
               ))}
             </div>
-            <button className="cta-primary" onClick={() => navigate('s-home')}>시작하기 →</button>
+            <button className="cta-primary" onClick={() => { trackWelcome('onboarding_completed'); navigate('s-home'); }}>시작하기 →</button>
             <div className="footnote">국적·학교·비자 유형만으로 맞춤 채널이 자동 생성됩니다</div>
           </div>
         </div>
