@@ -4,7 +4,14 @@
 
 > `http://localhost:5173`
 
-<!-- 스크린샷을 여기에 첨부하세요 -->
+![alt text](<스크린샷 2026-05-29 231415.png>)
+
+### 화면에서 확인할 수 있는 것
+
+- **🎤 음성 버튼** (입력창 옆) — `FEATURE_VOICE_INPUT` 플래그가 `true`로 활성화된 상태입니다. 환경 변수(`VITE_FEATURE_VOICE_INPUT=true`) 또는 베타 사용자 목록(`VITE_BETA_USERS`)에 의해 켜집니다.
+- **빠른 답변 칩** (비자 연장 · 외국인등록 · 건강보험 등) — `FEATURE_QUICK_REPLIES` 플래그가 `true`로 활성화된 상태입니다. 클릭 시 `quick_reply_clicked` 이벤트가 localStorage에 기록됩니다.
+
+두 기능 모두 `.env.local`에서 `false`로 바꾸면 UI에서 즉시 사라집니다.
 
 ---
 
