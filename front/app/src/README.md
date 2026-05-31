@@ -8,9 +8,9 @@
 
 | 항목 | 링크 |
 |------|------|
-| 테스트 코드 | [front/app/src/config/__tests__/](https://github.com/nadasoom2/yhs_AIOSS/tree/week%2313/front/app/src/config/__tests__) |
-| 테스트 코드 | [front/app/src/utils/__tests__/](https://github.com/nadasoom2/yhs_AIOSS/tree/week%2313/front/app/src/utils/__tests__) |
-| CI 워크플로우 | [frontend-test.yml](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/.github/workflows/frontend-test.yml) |
+| 테스트 코드 | [front/app/src/config/__tests__/](config/__tests__/) |
+| 테스트 코드 | [front/app/src/utils/__tests__/](utils/__tests__/) |
+| CI 워크플로우 | [frontend-test.yml](../../../.github/workflows/frontend-test.yml) |
 | CI 실행 결과 | [Actions](https://github.com/nadasoom2/yhs_AIOSS/actions/workflows/frontend-test.yml) |
 
 <table>
@@ -79,11 +79,11 @@ npm run test:coverage   # 커버리지 측정 (80% 임계값)
 
 | 항목 | 링크 |
 |------|------|
-| 시뮬레이션 코드 | [simulation/persona_simulation.py](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/simulation/persona_simulation.py) |
-| A/B 테스트 결과 보고서 | [simulation/results/ab_test_report.md](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/simulation/results/ab_test_report.md) |
-| 원시 이벤트 데이터 (JSON) | [simulation/results/simulation_data.json](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/simulation/results/simulation_data.json) |
-| Feature Flag 정의 | [src/config/featureFlags.js](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/front/app/src/config/featureFlags.js) |
-| A/B 실험 정의 | [src/config/experiments.js](https://github.com/nadasoom2/yhs_AIOSS/blob/week%2313/front/app/src/config/experiments.js) |
+| 시뮬레이션 코드 | [simulation/persona_simulation.py](../../../simulation/persona_simulation.py) |
+| A/B 테스트 결과 보고서 | [simulation/results/ab_test_report.md](../../../simulation/results/ab_test_report.md) |
+| 원시 이벤트 데이터 (JSON) | [simulation/results/simulation_data.json](../../../simulation/results/simulation_data.json) |
+| Feature Flag 정의 | [src/config/featureFlags.js](config/featureFlags.js) |
+| A/B 실험 정의 | [src/config/experiments.js](config/experiments.js) |
 
 ---
 
