@@ -7,11 +7,23 @@
  *  🔵 Refactor: 우선순위 로직(envVar → targetUsers → defaultEnabled)을 명확하게 유지
  */
 
-import { describe, it, expect, afterEach, vi } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 
 // import.meta.env는 모듈 로드 시점에 평가되므로
 // vi.stubEnv + vi.resetModules + dynamic import 패턴으로 각 케이스를 격리
 describe('isEnabled() — Feature Flag 평가', () => {
+  // .env.local에 VITE_FEATURE_VOICE_INPUT=true 등이 설정돼 있어
+  // vi.unstubAllEnvs()만으로는 원래 값(true)으로 복원됨.
+  // 각 테스트 전에 관련 env 변수를 명시적으로 중립화해야 격리가 보장됨.
+  beforeEach(() => {
+    vi.resetModules()
+    vi.unstubAllEnvs()
+    vi.stubEnv('VITE_FEATURE_VOICE_INPUT', '')
+    vi.stubEnv('VITE_FEATURE_DARK_MODE', '')
+    vi.stubEnv('VITE_FEATURE_QUICK_REPLIES', '')
+    vi.stubEnv('VITE_BETA_USERS', '')
+  })
+
   afterEach(() => {
     vi.resetModules()
     vi.unstubAllEnvs()
