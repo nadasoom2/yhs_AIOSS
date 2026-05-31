@@ -66,16 +66,20 @@ describe('assignVariant() — A/B 배정 로직', () => {
     expect(v2).toBe(v3)
   })
 
-  it('100명 유저에서 A/B 배분이 30~70% 범위 내 (균형 분배)', () => {
+  it('1000명 유저에서 A/B 배분이 40~60% 범위 내 (균형 분배)', () => {
     const counts = { A: 0, B: 0 }
-    for (let i = 0; i < 100; i++) {
-      const v = assignVariant('WELCOME_MESSAGE', `user_${i}`)
+    // uuid 스타일 ID를 사용해 해시 쏠림 방지
+    const userIds = Array.from({ length: 1000 }, (_, i) =>
+      `u_${i.toString(16).padStart(4, '0')}_${(i * 7919).toString(36)}`,
+    )
+    userIds.forEach(id => {
+      const v = assignVariant('WELCOME_MESSAGE', id)
       counts[v]++
-    }
-    expect(counts.A).toBeGreaterThanOrEqual(30)
-    expect(counts.A).toBeLessThanOrEqual(70)
-    expect(counts.B).toBeGreaterThanOrEqual(30)
-    expect(counts.B).toBeLessThanOrEqual(70)
+    })
+    expect(counts.A).toBeGreaterThanOrEqual(400)
+    expect(counts.A).toBeLessThanOrEqual(600)
+    expect(counts.B).toBeGreaterThanOrEqual(400)
+    expect(counts.B).toBeLessThanOrEqual(600)
   })
 
   it('WELCOME_MESSAGE와 CHAT_LAYOUT 배정은 서로 독립적', () => {
