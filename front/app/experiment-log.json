@@ -1,0 +1,411 @@
+[
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.377Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.378Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.378Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:24:38.379Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.119Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.120Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.120Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.120Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.120Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.120Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.121Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.121Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.121Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T13:25:03.121Z"
+  },
+  {
+    "name": "voice_input_triggered",
+    "properties": {
+      "action": "start"
+    },
+    "ts": "2026-05-29T13:25:36.595Z"
+  },
+  {
+    "name": "voice_input_triggered",
+    "properties": {
+      "action": "stop"
+    },
+    "ts": "2026-05-29T13:25:42.842Z"
+  },
+  {
+    "name": "quick_reply_clicked",
+    "properties": {
+      "text": "외국인등록"
+    },
+    "ts": "2026-05-29T13:26:02.351Z"
+  },
+  {
+    "name": "quick_reply_clicked",
+    "properties": {
+      "text": "비자 연장"
+    },
+    "ts": "2026-05-29T13:26:03.648Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.318Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.319Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.320Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.320Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.320Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.320Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.321Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.321Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.321Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:06:58.321Z"
+  },
+  {
+    "name": "voice_input_triggered",
+    "properties": {
+      "action": "start"
+    },
+    "ts": "2026-05-29T14:07:06.429Z"
+  },
+  {
+    "name": "voice_input_triggered",
+    "properties": {
+      "action": "stop"
+    },
+    "ts": "2026-05-29T14:13:51.686Z"
+  },
+  {
+    "name": "voice_input_triggered",
+    "properties": {
+      "action": "start"
+    },
+    "ts": "2026-05-29T14:13:52.466Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.204Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.205Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.206Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "VOICE_INPUT",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.206Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "DARK_MODE",
+      "enabled": false,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.206Z"
+  },
+  {
+    "name": "feature_flag_evaluated",
+    "properties": {
+      "flag": "QUICK_REPLIES",
+      "enabled": true,
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.206Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.207Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.207Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "WELCOME_MESSAGE",
+      "variant": "B",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.207Z"
+  },
+  {
+    "name": "experiment_assigned",
+    "properties": {
+      "experiment": "CHAT_LAYOUT",
+      "variant": "A",
+      "userId": "user_cdt9ofxh8"
+    },
+    "ts": "2026-05-29T14:24:18.207Z"
+  }
+]
