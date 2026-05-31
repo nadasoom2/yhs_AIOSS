@@ -23,6 +23,7 @@ const FLAGS = {
     defaultEnabled: false,
   },
   // 빠른 답변 칩 (채팅 화면 하단 추천 질문 버튼)
+  // CHAT_LAYOUT A/B 실험(experiments.js)의 게이트 — 이 플래그가 꺼지면 실험 진입 불가
   QUICK_REPLIES: {
     key: 'FEATURE_QUICK_REPLIES',
     envVar: import.meta.env.VITE_FEATURE_QUICK_REPLIES,

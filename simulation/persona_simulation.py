@@ -235,6 +235,22 @@ SIM_START_DATE = datetime.date(2026, 5, 1)
 SIM_DAYS = 14
 
 
+def _satisfaction_tendency(bias: float) -> str:
+    if bias > 0.05:
+        return f"긍정적 (+{bias} 경향, 좋은 경험에 후한 평점을 주는 편)"
+    elif bias < -0.05:
+        return f"비판적 ({bias} 경향, 불편함에 민감해 평점을 낮게 주는 편)"
+    return "중립적 (경험 그대로 평가)"
+
+
+def _task_difficulty(persona: dict) -> str:
+    low_korean = any(lvl in persona["korean_level"] for lvl in ("TOPIK 1", "TOPIK 2", "거의 없음"))
+    low_tech = persona["tech_savviness"] in ("낮음",)
+    if low_korean or low_tech:
+        return "어려움 — 한국어가 서툴거나 앱 사용에 익숙하지 않아, 절차가 복잡하면 중간에 포기할 수 있음"
+    return "쉬움 — 대부분의 태스크를 완료함"
+
+
 def simulate_day_session(llm: ChatOpenAI, persona: dict, day: int,
                           variant_wm: str, variant_cl: str) -> dict:
     """하루치 세션 이벤트를 LLM으로 생성"""
@@ -249,6 +265,8 @@ def simulate_day_session(llm: ChatOpenAI, persona: dict, day: int,
 비자: {persona['visa_type']} | 기술 능숙도: {persona['tech_savviness']}
 주요 관심사: {', '.join(persona['concern_areas'])}
 성격: {persona['personality']}
+만족도 경향: {_satisfaction_tendency(persona['satisfaction_bias'])}
+태스크 난이도: {_task_difficulty(persona)}
 
 [오늘의 앱 환경]
 시뮬레이션 {day}일차 ({date.strftime('%Y-%m-%d')})
@@ -270,7 +288,8 @@ def simulate_day_session(llm: ChatOpenAI, persona: dict, day: int,
 규칙:
 - questions: 1~3개, 내 한국어 수준에 맞는 실제 질문 (초급이면 짧고 단순하게)
 - used_quick_reply: 추천 카드가 있을 때만 true 가능
-- satisfaction: 정수 1~5
+- task_completed: 원하는 정보를 얻으면 true. 태스크 난이도가 "어려움"이면 복잡한 절차에서 false 가능
+- satisfaction: 내 만족도 경향을 반영한 정수 1~5
 - feedback: 내 국적/성격에 맞는 자연스러운 한 마디"""
 
     try:
@@ -596,6 +615,17 @@ def generate_report(user_summaries: list) -> str:
     )
 
     lines += [
+        "",
+        "---",
+        "",
+        "## 6. 통계적 한계 및 해석 주의사항",
+        "",
+        "| 항목 | 내용 |",
+        "|------|------|",
+        "| 샘플 크기 | 실험당 n=5 (variant A 5명, variant B 5명) — 통계적 유의성 검정 불가 |",
+        "| 유의성 검정 | 최소 n=30 이상 필요 (현재 결과는 방향성 참고용) |",
+        "| 시뮬레이션 한계 | LLM 생성 행동 패턴이 실제 사용자 행동과 다를 수 있음 |",
+        "| 권장 후속 조치 | 실제 서비스 배포 후 최소 2주·n≥200으로 재측정 |",
         "",
         "---",
         "",

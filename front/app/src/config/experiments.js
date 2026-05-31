@@ -3,12 +3,17 @@
  *
  * - 각 실험은 variants 배열과 weights(백분율, 합계 100) 로 구성
  * - assignVariant()는 userId 기반 해시를 사용해 항상 동일한 variant를 반환 (일관성 보장)
+ * - featureFlag: 실험 진입을 게이팅하는 Feature Flag 키 (featureFlags.js 참조)
+ *   null이면 플래그 없이 항상 실험 활성화
  */
 
+import { isEnabled } from './featureFlags';
+
 export const EXPERIMENTS = {
-  // 온보딩 환영 메시지 텍스트 실험
+  // 온보딩 환영 메시지 텍스트 실험 — 별도 플래그 없이 항상 활성
   WELCOME_MESSAGE: {
     key: 'AB_WELCOME_MESSAGE',
+    featureFlag: null,
     variants: ['A', 'B'],
     weights: [50, 50],
     description: {
@@ -16,9 +21,10 @@ export const EXPERIMENTS = {
       B: '신규 문구 — "AI 에이전트가 비자·행정 문제를 단번에"',
     },
   },
-  // 메인 채팅 레이아웃 실험
+  // 메인 채팅 레이아웃 실험 — QUICK_REPLIES 플래그가 켜진 사용자에게만 실험 진입
   CHAT_LAYOUT: {
     key: 'AB_CHAT_LAYOUT',
+    featureFlag: 'QUICK_REPLIES',
     variants: ['A', 'B'],
     weights: [50, 50],
     description: {
@@ -62,3 +68,17 @@ export function assignVariant(experimentKey, userId) {
 }
 
 export const EXPERIMENT_KEYS = Object.keys(EXPERIMENTS);
+
+/**
+ * Feature Flag 상태에 따라 실험이 현재 사용자에게 활성화돼 있는지 확인
+ * featureFlag가 null이면 항상 활성
+ * @param {string} experimentKey - EXPERIMENTS 키
+ * @param {string|null} userId
+ * @returns {boolean}
+ */
+export function isExperimentActive(experimentKey, userId = null) {
+  const exp = EXPERIMENTS[experimentKey];
+  if (!exp) return false;
+  if (!exp.featureFlag) return true;
+  return isEnabled(exp.featureFlag, userId);
+}

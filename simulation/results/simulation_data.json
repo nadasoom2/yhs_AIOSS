@@ -80,13 +80,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험을 어떻게 납부하나요?",
-            "수강신청 정정은 어디서 하나요?"
+            "국민건강보험은 어떻게 납부하나요?",
+            "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요! 조금 더 자세한 설명이 있으면 좋겠어요."
+          "feedback": "유용한 정보 감사합니다! 더 궁금한 게 많아요."
         },
         {
           "user_id": "user_01",
@@ -102,7 +102,7 @@
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 정확하고 유용했어요. 감사합니다!"
+          "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요!"
         },
         {
           "user_id": "user_01",
@@ -112,8 +112,8 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 어떻게 납부하나요?",
-            "수강신청 정정은 언제까지 가능한가요?"
+            "국민건강보험 납부 방법을 알고 싶어요.",
+            "수강신청 정정은 언제 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
@@ -128,13 +128,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부는 어디서 하나요?",
-            "수강신청 정정은 언제까지 가능한가요?"
+            "국민건강보험은 어떻게 납부하나요?",
+            "수강신청 정정은 언제 가능하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요. 감사합니다!"
+          "feedback": "유용한 정보가 많아서 좋았어요!"
         },
         {
           "user_id": "user_01",
@@ -144,13 +144,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부 방법은 무엇인가요?",
-            "수강신청 정정을 어떻게 할 수 있나요?"
+            "국민건강보험 납부는 어디서 하나요?",
+            "수강신청 정정 기간은 언제인가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요!"
         },
         {
           "user_id": "user_01",
@@ -160,13 +160,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 어떻게 납부하나요?",
-            "수강신청 정정은 언제까지 가능하나요?"
+            "국민건강보험 납부 방법이 궁금해요.",
+            "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 명확해서 좋았어요!"
         },
         {
           "user_id": "user_01",
@@ -176,13 +176,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부 방법이 궁금해요.",
-            "수강신청 정정 기간은 언제인가요?"
+            "국민건강보험은 어떻게 납부하나요?",
+            "수강신청 정정은 언제까지 할 수 있나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "많은 정보를 얻어서 좋았어요!"
+          "feedback": "정보가 명확하고 이해하기 쉬웠어요."
         },
         {
           "user_id": "user_01",
@@ -192,13 +192,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 어떻게 납부하나요?",
-            "수강신청 정정은 어디서 하나요?"
+            "국민건강보험은 어떻게 납부하나요?",
+            "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 많이 도움이 되었어요, 감사합니다!"
         },
         {
           "user_id": "user_01",
@@ -207,14 +207,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부 방법이 궁금해요.",
-            "수강신청 정정은 어디에서 하나요?"
+            "비자 연장 절차가 어떻게 되나요?",
+            "국민건강보험은 어떻게 납부하나요?",
+            "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 명확해서 좋았습니다!"
         },
         {
           "user_id": "user_01",
@@ -224,13 +224,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험은 어떻게 납부하나요?",
-            "수강신청 정정을 하려면 무엇을 해야 하나요?"
+            "국민건강보험 납부는 어디에서 하나요?",
+            "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 잘 정리되어 있어서 이해하기 쉬웠어요."
         },
         {
           "user_id": "user_01",
@@ -240,34 +240,18 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부는 언제 해야 하나요?",
-            "수강신청 정정은 어떻게 하나요?"
-          ],
-          "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
-        },
-        {
-          "user_id": "user_01",
-          "date": "2026-05-13",
-          "day": 13,
-          "variant_welcome_message": "A",
-          "variant_chat_layout": "A",
-          "questions": [
-            "비자 연장 절차는 어떻게 되나요?",
-            "국민건강보험 납부 방법을 알려주세요.",
+            "국민건강보험 납부 방법이 궁금해요.",
             "수강신청 정정은 언제까지 가능한가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 잘 정리되어 있어서 이해하기 쉬웠어요."
         },
         {
           "user_id": "user_01",
-          "date": "2026-05-14",
-          "day": 14,
+          "date": "2026-05-13",
+          "day": 13,
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
@@ -278,7 +262,23 @@
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 명확하고 도움이 많이 되었어요."
+        },
+        {
+          "user_id": "user_01",
+          "date": "2026-05-14",
+          "day": 14,
+          "variant_welcome_message": "A",
+          "variant_chat_layout": "A",
+          "questions": [
+            "비자 연장 절차는 어떻게 되나요?",
+            "국민건강보험 납부 방법을 알고 싶어요.",
+            "수강신청 정정은 언제까지 가능한가요?"
+          ],
+          "used_quick_reply": false,
+          "task_completed": true,
+          "satisfaction": 4,
+          "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요."
         }
       ]
     },
@@ -309,8 +309,8 @@
         "sessions_per_week": 5.0,
         "total_questions": 30,
         "questions_per_session": 3.0,
-        "avg_satisfaction": 4.2,
-        "task_completion_rate": 1.0,
+        "avg_satisfaction": 3.1,
+        "task_completion_rate": 0.1,
         "quick_reply_clicks": 10
       },
       "daily_events": [
@@ -321,14 +321,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 어떻게 준비해요?",
-            "은행 계좌 개설은 어디서 해요?",
-            "주민등록 방법 알려주세요."
+            "비자 서류는 어디서 준비해요?",
+            "은행 계좌는 어떻게 개설해요?",
+            "주민등록은 어떻게 하나요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "도움 많이 받았어요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵지만 도움이 필요해요."
         },
         {
           "user_id": "user_02",
@@ -337,14 +337,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 준비 어떻게 해요?",
-            "은행 계좌 어떻게 개설해요?",
-            "주민등록 방법 알려주세요."
+            "비자 서류 어떻게 준비해요?",
+            "은행 계좌 어떻게 만들어요?",
+            "주민등록 어떻게 해요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "추천 카드가 있어서 좋았어요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵지만 도움이 필요해요."
         },
         {
           "user_id": "user_02",
@@ -353,14 +353,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 준비는 어떻게 해요?",
-            "은행 계좌 어떻게 열어요?",
-            "주민등록 신청은 어디서 해요?"
+            "비자 서류 어떻게 준비해요?",
+            "은행 계좌 어떻게 개설해요?",
+            "주민등록 어떻게 하나요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "한국어 질문이 쉬워서 좋았어요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려워요, 더 쉽게 설명해 주세요."
         },
         {
           "user_id": "user_02",
@@ -369,14 +369,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 어떻게 준비해요?",
-            "은행 계좌 어떻게 개설해요?",
-            "주민등록 방법 알려주세요."
+            "비자 서류는 어떻게 준비해요?",
+            "은행 계좌는 어떻게 개설해요?",
+            "주민등록은 어디서 하나요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "카드 덕분에 쉽게 질문했어요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵지만 도움이 필요해요."
         },
         {
           "user_id": "user_02",
@@ -386,13 +386,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "비자 서류 어떻게 준비해요?",
-            "은행 계좌 어떻게 개설해요?",
+            "은행 계좌 어떻게 만들어요?",
             "주민등록 방법 알려주세요."
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "도움 많이 됐어요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려워요, 도와주세요."
         },
         {
           "user_id": "user_02",
@@ -401,14 +401,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 어떻게 준비해요?",
-            "은행 계좌 어떻게 만들어요?",
-            "주민등록은 어떻게 하나요?"
+            "비자 서류는 어떻게 준비해요?",
+            "은행 계좌는 어떻게 개설해요?",
+            "주민등록은 어떻게 해요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "추천 카드가 많아서 좋았어요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 더 자세한 설명이 필요해요."
         },
         {
           "user_id": "user_02",
@@ -417,14 +417,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류는 어디서 준비해요?",
+            "비자 서류는 어떻게 준비해요?",
             "은행 계좌 어떻게 개설해요?",
-            "주민등록은 어떻게 하나요?"
+            "주민등록 방법은 뭐에요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "추천 카드가 있어서 좋아요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려워요. 더 쉽게 설명해 주세요."
         },
         {
           "user_id": "user_02",
@@ -433,14 +433,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 어떻게 준비해요?",
+            "비자 서류 준비 어떻게 해요?",
             "은행 계좌 어떻게 개설해요?",
-            "주민등록 어떻게 하나요?"
+            "주민등록 방법 알려주세요."
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "도움이 많이 됐어요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵지만 도움 필요해요."
         },
         {
           "user_id": "user_02",
@@ -449,14 +449,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 준비는 어떻게 하나요?",
-            "은행 계좌는 어떻게 개설하나요?",
-            "주민등록은 어디서 하나요?"
+            "비자 서류 어떻게 준비해요?",
+            "은행 계좌 어떻게 만들어요?",
+            "주민등록 방법 알려주세요."
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "유용한 정보 많이 얻었어요!"
+          "satisfaction": 4,
+          "feedback": "도움 많이 받았어요, 고마워요!"
         },
         {
           "user_id": "user_02",
@@ -465,14 +465,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 서류 준비 어떻게 해요?",
-            "은행 계좌 어떻게 개설해요?",
-            "주민등록 방법 알려주세요."
+            "비자 서류는 어떻게 준비해요?",
+            "은행 계좌는 어디서 만들 수 있어요?",
+            "주민등록은 어떻게 해요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "도움 많이 되었어요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려웠어요."
         }
       ]
     },
@@ -501,8 +501,8 @@
         "retention_rate": 0.21,
         "total_sessions": 3,
         "sessions_per_week": 1.5,
-        "total_questions": 9,
-        "questions_per_session": 3.0,
+        "total_questions": 8,
+        "questions_per_session": 2.7,
         "avg_satisfaction": 4.0,
         "task_completion_rate": 1.0,
         "quick_reply_clicks": 0
@@ -516,13 +516,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "D-2 비자를 E-7으로 전환하려면 어떤 절차가 필요한가요?",
-            "주 20시간 초과 아르바이트를 어떻게 신청하나요?",
-            "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?"
+            "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?",
+            "주 20시간 초과 아르바이트를 하려면 어떻게 해야 하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유익했어요, 감사합니다."
+          "feedback": "정보가 유용했어요, 감사합니다!"
         },
         {
           "user_id": "user_03",
@@ -531,14 +531,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "D-2 비자를 E-7으로 전환하려면 어떤 서류가 필요할까요?",
-            "주 20시간 이상의 아르바이트를 할 수 있는 방법은 무엇인가요?",
-            "졸업 후 구직 체류를 위해 꼭 알아야 할 사항은 무엇인가요?"
+            "D-2 비자를 E-7 비자로 전환하는 과정은 어떻게 되나요?",
+            "주 20시간 초과 아르바이트를 할 수 있는 방법이 있나요?",
+            "졸업 후 구직 체류를 어떻게 신청하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "유용한 정보가 많아서 좋았습니다."
+          "feedback": "정보가 유용했습니다, 감사합니다."
         },
         {
           "user_id": "user_03",
@@ -547,14 +547,13 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "D-2 비자를 E-7으로 전환하는 절차는 어떻게 되나요?",
-            "주 20시간 초과 아르바이트를 허가받으려면 어떤 조건이 필요한가요?",
-            "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?"
+            "D-2 비자를 E-7으로 전환하려면 어떤 절차가 필요한가요?",
+            "졸업 후 구직 체류에 대한 정보가 궁금합니다."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정확한 정보가 필요했는데 도움이 많이 됐어요."
+          "feedback": "명확한 답변이 도움이 됐습니다."
         }
       ]
     },
@@ -585,9 +584,9 @@
         "sessions_per_week": 6.5,
         "total_questions": 38,
         "questions_per_session": 2.9,
-        "avg_satisfaction": 4.31,
+        "avg_satisfaction": 4.23,
         "task_completion_rate": 1.0,
-        "quick_reply_clicks": 12
+        "quick_reply_clicks": 13
       },
       "daily_events": [
         {
@@ -598,13 +597,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "정부 장학금 유지 조건은 뭐예요?",
-            "인턴십 비자 허용돼요?",
-            "월세 계약 어떻게 하나요?"
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약은 어떻게 하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "빠른 답변이 좋아요!"
+          "feedback": "정보가 유용했어요! 감사합니다!"
         },
         {
           "user_id": "user_04",
@@ -614,12 +613,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "정부 장학금 유지 조건은 무엇인가요?",
-            "인턴십 비자 허용 여부가 궁금해요."
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약 시 주의할 점은 뭐죠?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "빠른 답변이 많아서 좋았어요!"
+          "satisfaction": 5,
+          "feedback": "정보가 정말 유용했어요!"
         },
         {
           "user_id": "user_04",
@@ -628,14 +628,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 어떻게 되나요?",
-            "인턴십 비자 허용 여부를 알고 싶어요.",
-            "월세 계약을 어떻게 하면 좋을까요?"
+            "정부 장학금 유지 조건은 뭐야?",
+            "인턴십 비자 허용돼?",
+            "월세 계약 어떻게 해?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "유용한 정보가 많아서 좋았어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 빨리 나와서 좋았어!"
         },
         {
           "user_id": "user_04",
@@ -644,14 +644,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 뭐예요?",
-            "인턴십 비자 허용 여부 알고 싶어요.",
-            "월세 계약 어떻게 해야 하나요?"
+            "정부 장학금 유지 조건은 무엇인가요?",
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약 시 주의할 점은 어떤 게 있을까요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "정보가 빨리 나와서 좋았어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 유용했어요, 감사합니다!"
         },
         {
           "user_id": "user_04",
@@ -660,14 +660,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 무엇인가요?",
+            "정부 장학금 유지 조건은 뭐예요?",
             "인턴십 비자 허용 여부가 궁금해요.",
-            "월세 계약은 어떻게 해야 하나요?"
+            "월세 계약할 때 주의할 점이 뭐죠?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "유용한 정보 감사해요! 더 알고 싶어요."
+          "feedback": "정보가 정말 유용했어요!"
         },
         {
           "user_id": "user_04",
@@ -678,12 +678,12 @@
           "questions": [
             "정부 장학금 유지 조건은 뭐예요?",
             "인턴십 비자 허용되나요?",
-            "월세 계약 어떻게 해요?"
+            "월세 계약 시 주의할 점은 무엇인가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "빠른 답변 감사합니다!"
+          "satisfaction": 5,
+          "feedback": "정보가 정말 유용했어요!"
         },
         {
           "user_id": "user_04",
@@ -692,14 +692,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 무엇인가요?",
-            "인턴십 비자 허용 여부는 어떻게 되나요?",
+            "정부 장학금 유지 조건은 뭐예요?",
+            "인턴십 비자 허용 여부가 궁금해요.",
             "월세 계약할 때 주의할 점은 무엇인가요?"
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요! 더 많은 팁이 필요해요."
+          "feedback": "정보가 빠르게 나와서 좋았어요!"
         },
         {
           "user_id": "user_04",
@@ -708,14 +708,13 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 무엇인가요?",
-            "인턴십 비자 허용 여부가 궁금해요.",
-            "월세 계약 시 주의할 점은 뭐죠?"
+            "한국에서 인턴십 비자는 어떻게 되나요?",
+            "정부 장학금 유지하려면 어떤 조건이 필요한가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요!"
+          "feedback": "정보가 빨리 나와서 좋았어요!"
         },
         {
           "user_id": "user_04",
@@ -724,14 +723,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 뭐예요?",
-            "인턴십 비자 허용되나요?",
-            "월세 계약할 때 주의할 점은?"
+            "정부 장학금 유지 조건은 무엇인가요?",
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약 시 주의할 점은 어떤 게 있을까요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요, 감사합니다!"
+          "feedback": "정보가 빨리 나와서 좋았어요!"
         },
         {
           "user_id": "user_04",
@@ -741,13 +740,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "정부 장학금 유지 조건은 무엇인가요?",
-            "인턴십 비자 허용 여부는 어떻게 되나요?",
-            "월세 계약 시 주의할 점은 무엇인가요?"
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약할 때 주의할 점은 무엇인가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "정확한 답변이 빨리 나와서 좋았어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 유용했어요, 감사합니다!"
         },
         {
           "user_id": "user_04",
@@ -756,14 +755,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건이 뭐예요?",
-            "인턴십 비자 허용 여부는 어떻게 되나요?",
-            "월세 계약할 때 주의할 점은 무엇인가요?"
+            "정부 장학금 유지 조건은 무엇인가요?",
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약 시 주의할 점이 뭐예요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했어요! 더 간단하게 설명해주면 좋겠어요."
+          "feedback": "정보가 유용했어요, 감사합니다!"
         },
         {
           "user_id": "user_04",
@@ -773,8 +772,8 @@
           "variant_chat_layout": "B",
           "questions": [
             "정부 장학금 유지 조건은 무엇인가요?",
-            "인턴십 비자 허용 여부는 어떻게 되나요?",
-            "월세 계약 시 주의할 점은 무엇인가요?"
+            "인턴십 비자에 대해 알고 싶어요.",
+            "월세 계약할 때 주의할 점은 뭐예요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
@@ -788,14 +787,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "B",
           "questions": [
-            "정부 장학금 유지 조건은 뭐야?",
-            "인턴십 비자 허용돼?",
-            "월세 계약 어떻게 해?"
+            "정부 장학금 유지 조건은 뭐예요?",
+            "인턴십 비자 허용 여부가 궁금해요.",
+            "월세 계약할 때 주의할 점은 무엇인가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "빠른 답변이 좋아서 만족해!"
+          "feedback": "정보가 유용했어요!"
         }
       ]
     },
@@ -826,8 +825,8 @@
         "sessions_per_week": 3.5,
         "total_questions": 21,
         "questions_per_session": 3.0,
-        "avg_satisfaction": 4.0,
-        "task_completion_rate": 1.0,
+        "avg_satisfaction": 2.86,
+        "task_completion_rate": 0.0,
         "quick_reply_clicks": 0
       },
       "daily_events": [
@@ -838,14 +837,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장 어떻게 하나요?",
-            "병원 가는 방법은?",
-            "교통카드 충전은 어디서 하나요?"
+            "비자 연장 어떻게 해요?",
+            "병원 가면 뭐 필요해요?",
+            "교통카드 어떻게 충전해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "한국 생활이 조금 더 쉬워졌어요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려워요. 쉽게 설명해 주세요."
         },
         {
           "user_id": "user_05",
@@ -855,13 +854,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 연장 어떻게 해요?",
-            "병원 가려면 뭐 필요한가요?",
+            "병원 가는 방법 알려줘요.",
             "교통카드 충전 어디서 해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 간단하고 좋았어요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려워서 힘들었어요."
         },
         {
           "user_id": "user_05",
@@ -870,14 +869,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장은 어떻게 해요?",
-            "병원 가는 방법을 알고 싶어요.",
-            "교통카드 충전은 어디서 해요?"
+            "비자 연장 어떻게 해요?",
+            "병원 가려면 뭐 알아야 해요?",
+            "교통카드 충전 어디서 해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 간단해서 좋았어요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "정보가 조금 복잡했어요."
         },
         {
           "user_id": "user_05",
@@ -886,14 +885,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장은 어떻게 하나요?",
-            "병원에서는 어떻게 진료를 받나요?",
-            "교통카드는 어디서 충전하나요?"
+            "비자 연장 방법은?",
+            "병원 가는 방법은?",
+            "교통카드 어떻게 충전해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 간단하고 도움이 많이 되었어요."
+          "task_completed": false,
+          "satisfaction": 2,
+          "feedback": "정보가 복잡해서 이해하기 어려웠어요."
         },
         {
           "user_id": "user_05",
@@ -902,14 +901,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장 어떻게 해요?",
-            "병원 가는 방법 알려주세요.",
-            "교통카드 충전은 어디서 해요?"
+            "비자 연장은 어떻게 하나요?",
+            "병원 이용할 때 필요한 것 있나요?",
+            "교통카드 충전은 어디서 하나요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 간단해서 좋았어요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어려웠어요. 더 쉬운 방법이 있었으면 좋겠어요."
         },
         {
           "user_id": "user_05",
@@ -918,14 +917,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장 어떻게 해요?",
-            "병원 가려면 어떻게 해야 하나요?",
-            "교통카드 충전은 어디서 해요?"
+            "비자 연장 방법은?",
+            "병원 가는 방법은?",
+            "교통카드 어떻게 충전해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 간단해서 좋았어요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵고 복잡했어요."
         },
         {
           "user_id": "user_05",
@@ -934,14 +933,14 @@
           "variant_welcome_message": "A",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 연장은 어떻게 하나요?",
-            "병원 이용 방법을 알고 싶어요.",
-            "교통카드 충전은 어디서 하나요?"
+            "비자 연장 어떻게 해요?",
+            "병원 가려면 뭐 해야 해요?",
+            "교통카드 어떻게 충전해요?"
           ],
           "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "도움이 많이 되었어요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "조금 어렵고 복잡해요."
         }
       ]
     },
@@ -970,11 +969,11 @@
         "retention_rate": 0.71,
         "total_sessions": 10,
         "sessions_per_week": 5.0,
-        "total_questions": 29,
-        "questions_per_session": 2.9,
-        "avg_satisfaction": 4.7,
+        "total_questions": 30,
+        "questions_per_session": 3.0,
+        "avg_satisfaction": 4.3,
         "task_completion_rate": 1.0,
-        "quick_reply_clicks": 9
+        "quick_reply_clicks": 10
       },
       "daily_events": [
         {
@@ -985,13 +984,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "포트폴리오 제출 방법은 무엇인가요?",
-            "디자인 회사 인턴십 비자 신청은 어떻게 하나요?",
-            "한국에서 취업 준비를 위한 팁이 있을까요?"
+            "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+            "한국에서 취업 준비를 어떻게 시작해야 하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 많아서 좋았어요!"
+          "satisfaction": 4,
+          "feedback": "디자인 관련 정보가 잘 정리되어 있어서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1000,14 +999,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자 신청 방법은?",
-            "한국 취업 준비에 필요한 자료는 무엇인가요?"
+            "포트폴리오 제출은 어떻게 하나요?",
+            "디자인 회사 인턴십 비자는 어떻게 준비해요?",
+            "한국에서 취업하려면 어떤 절차가 필요한가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 많아서 정말 유용했어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1017,12 +1016,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자는 어떻게 신청하나요?"
+            "디자인 회사 인턴십을 위해 필요한 서류는 무엇인가요?",
+            "한국에서 취업 준비를 위한 좋은 방법은 무엇인가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "디자인 관련 정보가 유용했어요!"
+          "satisfaction": 5,
+          "feedback": "디자인 관련 정보가 많아서 정말 유용했어요!"
         },
         {
           "user_id": "user_06",
@@ -1031,14 +1031,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자 관련 정보가 필요해요.",
-            "한국에서 취업 준비를 어떻게 시작해야 할까요?"
+            "포트폴리오 제출 방법은 무엇인가요?",
+            "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+            "한국에서 취업 준비를 어떻게 시작해야 하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 매우 유용했어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1047,14 +1047,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자 신청 방법이 궁금해요.",
-            "한국에서 취업 준비를 어떻게 시작해야 하나요?"
+            "포트폴리오 제출을 위한 절차는 어떻게 되나요?",
+            "디자인 회사 인턴십 비자에 대해 알고 싶어요.",
+            "한국에서 취업 준비는 어떻게 시작하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 많아서 도움이 많이 됐어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1063,14 +1063,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 방법은 무엇인가요?",
-            "디자인 회사 인턴십 비자에 대해 알고 싶어요.",
-            "한국에서 취업 준비를 어떻게 시작해야 하나요?"
+            "포트폴리오 제출 방법이 궁금해요.",
+            "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+            "한국에서 취업 준비를 할 때 유용한 팁이 있을까요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "정보가 정말 유용했어요. 감사합니다!"
+          "satisfaction": 4,
+          "feedback": "디자인 관련 정보가 많아서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1079,14 +1079,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자 신청 방법을 알려주세요.",
-            "한국에서 취업 준비를 어떻게 시작해야 할까요?"
+            "디자인 회사 인턴십 비자 발급 방법은?",
+            "포트폴리오 제출 마감일이 언제인가요?",
+            "한국 취업 준비를 위해 어떤 자료를 준비해야 하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 많아서 정말 유용해요!"
+          "satisfaction": 4,
+          "feedback": "디자인 관련 정보가 많아서 좋았어요!"
         },
         {
           "user_id": "user_06",
@@ -1095,14 +1095,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일이 언제인가요?",
-            "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
-            "한국에서 취업 준비를 시작하려면 무엇을 해야 하나요?"
+            "포트폴리오 제출 마감일은 언제인가요?",
+            "디자인 회사 인턴십 비자 신청 방법을 알고 싶어요.",
+            "한국에서 취업을 준비하는 데 필요한 서류는 무엇인가요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "디자인 관련 정보가 많아서 정말 유용해요!"
+          "feedback": "정보가 정말 유용했어요! 감사합니다."
         },
         {
           "user_id": "user_06",
@@ -1111,14 +1111,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "포트폴리오 제출 마감일이 언제인가요?",
-            "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
-            "한국에서 취업 준비를 위한 팁이 있나요?"
+            "포트폴리오 제출 마감일은 언제인가요?",
+            "디자인 회사 인턴십 비자 신청 방법을 알려주세요.",
+            "한국에서 취업 준비를 위해 어떤 자료를 준비해야 하나요?"
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "디자인 관련 정보가 많아서 좋았어요!"
+          "satisfaction": 5,
+          "feedback": "정말 유익한 정보였어요! 감사합니다."
         },
         {
           "user_id": "user_06",
@@ -1128,13 +1128,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "포트폴리오 제출 마감일은 언제인가요?",
-            "디자인 회사 인턴십 비자 신청 방법을 알고 싶어요.",
+            "디자인 회사 인턴십 비자 신청 방법은?",
             "한국에서 취업 준비를 어떻게 시작해야 하나요?"
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "유용한 정보가 많아서 좋았어요!"
+          "feedback": "정보가 잘 정리되어 있어서 도움이 되었어요!"
         }
       ]
     },
@@ -1177,14 +1177,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 무엇이 필요합니까?",
-            "동아리 등록 방법이 궁금합니다.",
-            "학교 행사 일정은 어떻게 확인하나요?"
+            "비자 갱신 서류는 무엇이 필요하나요?",
+            "동아리 등록 방법을 알고 싶어요.",
+            "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 정확하고 유용했습니다."
+          "feedback": "정보가 정확해서 좋았습니다."
         },
         {
           "user_id": "user_07",
@@ -1193,14 +1193,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 무엇이 필요한가요?",
+            "비자 갱신에 필요한 서류는 무엇인가요?",
             "동아리 등록 방법을 알려주세요.",
             "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 정확하면 좋겠습니다."
+          "feedback": "정보가 정확해서 좋았습니다."
         },
         {
           "user_id": "user_07",
@@ -1210,13 +1210,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 갱신 서류는 무엇이 필요한가요?",
-            "동아리 등록 방법이 궁금해요.",
+            "동아리 등록 방법이 궁금합니다.",
             "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 정확하고 간결해서 좋았어요."
+          "feedback": "정보가 정확해서 좋았습니다."
         },
         {
           "user_id": "user_07",
@@ -1225,24 +1225,8 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 어떤 것이 필요한가요?",
-            "동아리 등록 방법이 궁금해요.",
-            "학교 행사 일정은 어디서 확인하나요?"
-          ],
-          "used_quick_reply": false,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "정보가 정확해서 좋았어요."
-        },
-        {
-          "user_id": "user_07",
-          "date": "2026-05-06",
-          "day": 6,
-          "variant_welcome_message": "B",
-          "variant_chat_layout": "A",
-          "questions": [
-            "비자 갱신 서류는 무엇이 필요하나요?",
-            "동아리 등록 절차는 어떻게 되나요?",
+            "비자 갱신 서류는 무엇이 필요한가요?",
+            "동아리 등록 방법을 알고 싶어요.",
             "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
@@ -1252,19 +1236,35 @@
         },
         {
           "user_id": "user_07",
+          "date": "2026-05-06",
+          "day": 6,
+          "variant_welcome_message": "B",
+          "variant_chat_layout": "A",
+          "questions": [
+            "비자 갱신 서류는 무엇인가요?",
+            "동아리 등록 방법을 알고 싶어요.",
+            "학교 행사 일정은 어디서 확인하나요?"
+          ],
+          "used_quick_reply": false,
+          "task_completed": true,
+          "satisfaction": 4,
+          "feedback": "정확한 정보가 도움이 됐어요."
+        },
+        {
+          "user_id": "user_07",
           "date": "2026-05-07",
           "day": 7,
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 무엇인가요?",
-            "동아리 등록 방법이 궁금해요.",
-            "학교 행사 일정은 어떻게 확인하나요?"
+            "비자 갱신에 필요한 서류는 무엇인가요?",
+            "동아리 등록 절차는 어떻게 되나요?",
+            "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 명확하고 좋았어요."
+          "feedback": "정보가 정확해서 좋았습니다."
         },
         {
           "user_id": "user_07",
@@ -1273,9 +1273,9 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 무엇이 필요하나요?",
-            "동아리 등록 방법을 알고 싶어요.",
-            "학교 행사 일정은 어디서 확인하나요?"
+            "비자 갱신 서류는 무엇이 필요한가요?",
+            "동아리 등록 방법이 궁금해요.",
+            "학교 행사 일정은 어디에서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
@@ -1289,14 +1289,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신에 필요한 서류는 무엇인가요?",
-            "동아리 등록 방법을 알고 싶어요.",
+            "비자 갱신 서류는 어떤 것들이 필요한가요?",
+            "동아리 등록 방법을 알려주세요.",
             "학교 행사 일정은 어디서 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 정확하고 도움이 되었습니다."
+          "feedback": "정보가 정확해서 좋았어요."
         },
         {
           "user_id": "user_07",
@@ -1305,14 +1305,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "비자 갱신 서류는 무엇이 필요한가요?",
-            "동아리 등록 방법을 알고 싶어요.",
-            "학교 행사 일정은 어디에서 확인하나요?"
+            "비자 갱신 서류는 무엇인가요?",
+            "동아리 등록 방법을 알려주세요.",
+            "학교 행사 일정은 어떻게 확인하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 명확하고 유용했어요."
+          "feedback": "정보가 정확하면 좋겠습니다."
         },
         {
           "user_id": "user_07",
@@ -1322,13 +1322,13 @@
           "variant_chat_layout": "A",
           "questions": [
             "비자 갱신 서류는 무엇이 필요한가요?",
-            "동아리 등록 방법은 어떻게 되나요?",
-            "학교 행사 일정은 어디에서 확인하나요?"
+            "동아리 등록 방법을 알고 싶어요.",
+            "학교 행사 일정은 어디에서 확인할 수 있나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 명확하고 좋았습니다."
+          "feedback": "정보가 정확하고 도움이 되었어요."
         }
       ]
     },
@@ -1359,9 +1359,9 @@
         "sessions_per_week": 5.0,
         "total_questions": 30,
         "questions_per_session": 3.0,
-        "avg_satisfaction": 3.8,
-        "task_completion_rate": 1.0,
-        "quick_reply_clicks": 9
+        "avg_satisfaction": 3.1,
+        "task_completion_rate": 0.1,
+        "quick_reply_clicks": 7
       },
       "daily_events": [
         {
@@ -1372,13 +1372,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "교환학생 등록 절차는 뭐예요?",
-            "한국에서 영어로 지원받을 수 있나요?",
-            "주요 관광지는 어디예요?"
+            "영어 지원 있어요?",
+            "서울의 관광지 추천해 주세요."
           ],
           "used_quick_reply": true,
-          "task_completed": true,
+          "task_completed": false,
           "satisfaction": 3,
-          "feedback": "영어 지원이 필요해요!"
+          "feedback": "한국어가 어려워서 힘들었어요."
         },
         {
           "user_id": "user_08",
@@ -1387,14 +1387,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록은 어떻게 하나요?",
-            "영어 지원이 있나요?",
-            "서울의 주요 관광지는 어디인가요?"
+            "교환학생 등록 절차는 뭐예요?",
+            "영어 지원 있어요?",
+            "관광지 추천해 주세요."
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "앱이 유용하지만 영어 지원이 필요해요."
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "앱이 좀 더 영어로 지원되면 좋겠어요."
         },
         {
           "user_id": "user_08",
@@ -1403,14 +1403,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록 어떻게 하나요?",
-            "영어로 지원하나요?",
-            "서울의 관광지는 어디인가요?"
+            "교환학생 등록 절차는 어떻게 되나요?",
+            "영어 지원이 있나요?",
+            "서울의 주요 관광지는 어디인가요?"
           ],
-          "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "영어 지원이 더 많았으면 좋겠어요!"
+          "used_quick_reply": false,
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어려워서 힘들어요."
         },
         {
           "user_id": "user_08",
@@ -1419,14 +1419,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록 절차는 어떻게 되나요?",
+            "교환학생 등록 절차는 무엇인가요?",
             "영어 지원이 있나요?",
-            "서울의 주요 관광지는 어디인가요?"
+            "주요 관광지는 어디인가요?"
           ],
-          "used_quick_reply": true,
-          "task_completed": true,
+          "used_quick_reply": false,
+          "task_completed": false,
           "satisfaction": 3,
-          "feedback": "한국어가 어렵지만, 정보는 유용했어요!"
+          "feedback": "한국어가 어려워서 조금 힘들었어요."
         },
         {
           "user_id": "user_08",
@@ -1435,14 +1435,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록 방법은?",
+            "교환학생 등록 절차는 뭐예요?",
             "영어 지원이 있나요?",
-            "관광지 추천해 주세요."
+            "주요 관광지는 어디예요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "영어 지원이 필요해요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어려워서 조금 힘들어요."
         },
         {
           "user_id": "user_08",
@@ -1451,14 +1451,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록은 어떻게 하나요?",
+            "교환학생 등록 절차는 어떻게 되나요?",
             "영어 지원이 있나요?",
-            "관광지 추천해 주세요."
+            "서울의 주요 관광지는 어디인가요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "한국어가 어려워요, 하지만 앱은 괜찮아요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어려워서 힘들었어요."
         },
         {
           "user_id": "user_08",
@@ -1467,14 +1467,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록은 어떻게 하나요?",
-            "영어 지원이 있나요?",
+            "교환학생 등록 절차는 무엇인가요?",
+            "학교에서 영어 지원이 있나요?",
             "서울의 주요 관광지는 어디인가요?"
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "영어 지원이 있으면 좋겠어요!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어려워서 좀 힘들었어요."
         },
         {
           "user_id": "user_08",
@@ -1483,14 +1483,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록 어떻게 해요?",
-            "영어로 도와줄 수 있어요?",
-            "서울 관광지 어디가 좋나요?"
+            "교환학생 등록 절차는 어떻게 되나요?",
+            "영어 지원이 있나요?",
+            "관광지 추천해 주세요."
           ],
           "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "영어 지원이 필요해요, 감사합니다!"
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어렵고 정보가 복잡해요."
         },
         {
           "user_id": "user_08",
@@ -1500,13 +1500,13 @@
           "variant_chat_layout": "B",
           "questions": [
             "교환학생 등록 절차는 어떻게 되나요?",
-            "서울에서 추천 관광지는 어디인가요?",
-            "영어 지원이 있나요?"
+            "영어 지원이 있나요?",
+            "추천 관광지는 어디인가요?"
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "영어 지원이 더 많으면 좋겠어요!"
+          "feedback": "정보가 빠르게 나와서 좋았어요!"
         },
         {
           "user_id": "user_08",
@@ -1515,14 +1515,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "교환학생 등록 어떻게 하나요?",
-            "한국에서 영어 지원 있나요?",
-            "서울의 유명한 관광지는 어디인가요?"
+            "교환학생 등록 절차는 어떻게 되나요?",
+            "영어로 지원 가능한가요?",
+            "서울의 주요 관광지는 어디인가요?"
           ],
-          "used_quick_reply": true,
-          "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "추천 카드가 있어 좋았어요. 영어 지원도 있었으면 좋겠어요."
+          "used_quick_reply": false,
+          "task_completed": false,
+          "satisfaction": 3,
+          "feedback": "한국어가 어려워서 조금 힘들었어요."
         }
       ]
     },
@@ -1565,14 +1565,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "한국에서 연구비 지원을 받으려면 어떤 절차가 필요한가요?",
-            "논문 심사 일정을 어떻게 관리할 수 있을까요?",
-            "비자 만료 전에 연장하는 방법은 무엇인가요?"
+            "연구비 지원 신청은 어떻게 하나요?",
+            "논문 심사 일정은 어떻게 관리하나요?",
+            "비자 연장 절차는 무엇인가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유익했지만 더 자세한 설명이 필요해요."
+          "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
         },
         {
           "user_id": "user_09",
@@ -1581,14 +1581,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "연구비 지원 행정에 대한 정보가 필요해요.",
-            "논문 심사 일정 관리 방법을 알고 싶어요.",
-            "비자 연장 절차에 대해 자세히 설명해 주세요."
+            "연구비 지원 행정에 대한 정보는 어디서 찾을 수 있나요?",
+            "논문 심사 일정은 어떻게 관리하나요?",
+            "비자 연장 절차를 설명해 주세요."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유익했지만 더 구체적인 내용이 필요해요."
+          "feedback": "정보가 잘 정리되어 있어서 좋았습니다."
         },
         {
           "user_id": "user_09",
@@ -1597,14 +1597,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "한국에서 연구비 지원을 받는 방법은 무엇인가요?",
+            "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
             "논문 심사 일정을 어떻게 관리할 수 있나요?",
-            "비자 연장 절차에 대해 자세히 알고 싶습니다."
+            "비자 연장 절차는 어떻게 되나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만, 좀 더 자세한 설명이 필요합니다."
+          "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
         },
         {
           "user_id": "user_09",
@@ -1615,12 +1615,12 @@
           "questions": [
             "연구비 지원을 받으려면 어떤 절차가 필요한가요?",
             "논문 심사 일정은 어떻게 관리하나요?",
-            "비자 연장은 어떻게 신청하나요?"
+            "비자 연장 신청은 어디서 하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만 더 구체적인 설명이 필요해요."
+          "feedback": "정보가 유용했어요, 더 자세한 설명이 필요해요."
         },
         {
           "user_id": "user_09",
@@ -1629,14 +1629,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "연구비 지원 행정에 대한 자세한 정보가 필요해요.",
-            "논문 심사 일정은 어떻게 관리하나요?",
-            "비자 연장 절차에 대해 설명해 주세요."
+            "연구비 지원 행정에 필요한 서류는 무엇인가요?",
+            "논문 심사 일정 관리는 어떻게 하나요?",
+            "비자 연장 절차에 대해 알고 싶어요."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 더 필요해요. 상세 설명이 좋습니다."
+          "feedback": "정보가 유용했지만, 더 구체적인 설명이 필요해요."
         },
         {
           "user_id": "user_09",
@@ -1645,14 +1645,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
-            "논문 심사 일정은 어떻게 관리하나요?",
-            "비자 연장은 어떤 절차가 필요한가요?"
+            "연구비 지원 행정에 대해 알려주세요.",
+            "논문 심사 일정 관리는 어떻게 하나요?",
+            "비자 연장 절차가 궁금합니다."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "상세한 정보가 필요합니다. 더 알고 싶어요."
+          "feedback": "정보가 유용했지만, 더 자세한 설명이 필요합니다."
         },
         {
           "user_id": "user_09",
@@ -1661,14 +1661,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "논문 심사 일정은 어떻게 관리하나요?",
-            "비자 연장 절차에 대해 알고 싶어요.",
-            "연구비 지원을 받으려면 어떤 서류가 필요한가요?"
+            "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
+            "논문 심사 일정을 관리하는 방법은 무엇인가요?",
+            "비자 연장 절차에 대해 알려주세요."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
+          "feedback": "정보가 상세해서 좋았어요. 더 알고 싶어요."
         },
         {
           "user_id": "user_09",
@@ -1677,14 +1677,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "연구비 지원 행정에 대해 더 알고 싶어요.",
+            "연구비 지원 행정에 대해 설명해 주세요.",
             "논문 심사 일정은 어떻게 관리하나요?",
-            "비자 연장 절차는 어떻게 되나요?"
+            "비자 연장 절차는 무엇인가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만 좀 더 구체적인 설명이 필요해요."
+          "feedback": "정보가 잘 정리되어 있어서 좋았습니다."
         },
         {
           "user_id": "user_09",
@@ -1693,14 +1693,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "연구비 지원 행정 절차는 어떻게 되나요?",
-            "논문 심사 일정은 언제 결정되나요?",
-            "비자 연장 신청은 어디서 하나요?"
+            "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
+            "논문 심사 일정을 어떻게 관리할 수 있나요?",
+            "비자 만료 전에 연장하는 방법은 무엇인가요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만 더 자세한 설명이 필요해요."
+          "feedback": "정보가 유용했지만 더 구체적인 답변을 원합니다."
         },
         {
           "user_id": "user_09",
@@ -1709,14 +1709,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "A",
           "questions": [
-            "연구비 지원 행정에 대해 더 알고 싶습니다.",
-            "논문 심사 일정을 어떻게 관리하나요?",
-            "비자 연장은 어떻게 신청하나요?"
+            "연구비 지원을 받으려면 어떤 절차가 필요한가요?",
+            "논문 심사 일정을 어떻게 관리할 수 있을까요?",
+            "비자 연장 신청은 언제 시작해야 하나요?"
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 4,
-          "feedback": "정보가 유용했지만, 더 자세한 설명이 필요해요."
+          "feedback": "정보를 잘 얻어서 만족합니다. 더 자세한 설명이 필요해요."
         }
       ]
     },
@@ -1745,11 +1745,11 @@
         "retention_rate": 0.5,
         "total_sessions": 7,
         "sessions_per_week": 3.5,
-        "total_questions": 21,
-        "questions_per_session": 3.0,
+        "total_questions": 20,
+        "questions_per_session": 2.9,
         "avg_satisfaction": 4.86,
         "task_completion_rate": 1.0,
-        "quick_reply_clicks": 2
+        "quick_reply_clicks": 5
       },
       "daily_events": [
         {
@@ -1759,14 +1759,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장을 어떻게 자동화할 수 있나요?",
-            "TOPIK 시험 등록은 어디서 하나요?",
-            "프랑스 정부 장학금에 대해 더 알고 싶어요."
+            "비자 연장 자동화에 대해 알고 싶어요.",
+            "TOPIK 시험 등록 과정은 어떻게 되나요?",
+            "프랑스 정부 장학금과 관련된 정보가 필요해요."
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "정말 유용한 정보가 많아서 매우 만족했습니다!"
+          "feedback": "정확하고 유용한 정보가 많아서 좋았어요!"
         },
         {
           "user_id": "user_10",
@@ -1775,14 +1775,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장 자동화에 대한 구체적인 절차는 무엇인가요?",
-            "TOPIK 시험 등록 시 주의해야 할 점은 무엇인가요?",
+            "비자 연장을 위한 필요한 서류는 무엇인가요?",
+            "TOPIK 시험 등록은 어떻게 하나요?",
             "프랑스 정부 장학금과 관련된 정보는 어디서 찾을 수 있나요?"
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
-          "satisfaction": 4,
-          "feedback": "앱이 유용하지만, 좀 더 세부적인 정보가 필요해요."
+          "satisfaction": 5,
+          "feedback": "정보가 매우 유용하고 도움이 되었습니다!"
         },
         {
           "user_id": "user_10",
@@ -1791,14 +1791,13 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장 절차는 어떻게 되나요?",
-            "TOPIK 시험 등록은 언제 시작하나요?",
-            "프랑스 정부 장학금 신청 방법이 궁금해요."
+            "비자 연장 자동화에 대해 더 알고 싶어요.",
+            "TOPIK 시험 등록 절차가 궁금해요."
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "앱이 정말 유용해요! 더 많은 정보가 필요해요."
+          "feedback": "정확한 정보 덕분에 매우 만족스러웠어요!"
         },
         {
           "user_id": "user_10",
@@ -1807,14 +1806,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장 자동화에 대해 더 알고 싶어요.",
-            "TOPIK 시험 등록 절차는 어떻게 되나요?",
-            "프랑스 정부 장학금과 관련된 정보가 필요해요."
+            "비자 연장을 위한 서류는 무엇이 필요할까요?",
+            "TOPIK 시험 등록은 어떻게 하나요?",
+            "프랑스 정부 장학금에 대해 더 알고 싶어요."
           ],
           "used_quick_reply": false,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "앱이 정말 유용하고, 필요한 정보를 쉽게 찾을 수 있었어요."
+          "feedback": "정보가 명확하고 유용했어요!"
         },
         {
           "user_id": "user_10",
@@ -1823,14 +1822,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장을 위한 서류는 무엇이 필요한가요?",
-            "TOPIK 시험 등록은 어떻게 하나요?",
-            "프랑스 정부 장학금의 신청 방법은 무엇인가요?"
+            "비자 연장 자동화는 어떻게 하나요?",
+            "TOPIK 시험 등록 절차가 궁금해요.",
+            "프랑스 정부 장학금 신청 방법을 알고 싶어요."
           ],
-          "used_quick_reply": false,
+          "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "정확한 정보가 필요했는데, 정말 유용했어요!"
+          "feedback": "정확한 정보 덕분에 도움이 많이 되었어요!"
         },
         {
           "user_id": "user_10",
@@ -1839,14 +1838,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장 자동화 과정은 어떻게 되나요?",
-            "TOPIK 시험 등록은 언제부터 가능한가요?",
+            "비자 연장 절차는 어떻게 되나요?",
+            "TOPIK 시험 등록은 언제까지 하나요?",
             "프랑스 정부 장학금에 대해 더 알고 싶어요."
           ],
           "used_quick_reply": false,
           "task_completed": true,
-          "satisfaction": 5,
-          "feedback": "정확하고 빠른 답변이 좋았어요!"
+          "satisfaction": 4,
+          "feedback": "정보가 유용하고 도움이 많이 되었어요!"
         },
         {
           "user_id": "user_10",
@@ -1855,14 +1854,14 @@
           "variant_welcome_message": "B",
           "variant_chat_layout": "B",
           "questions": [
-            "비자 연장 자동화에 대해 더 알고 싶어요.",
-            "TOPIK 시험 등록 절차는 어떻게 되나요?",
-            "프랑스 정부 장학금에 대해 문의하고 싶습니다."
+            "비자 연장 절차는 어떻게 되나요?",
+            "TOPIK 시험 등록 방법을 알려주세요.",
+            "프랑스 정부 장학금에 대해 정보가 더 필요해요."
           ],
           "used_quick_reply": true,
           "task_completed": true,
           "satisfaction": 5,
-          "feedback": "앱이 정말 유용하네요! 더 많은 정보가 필요해요."
+          "feedback": "정말 유용한 정보들이 많아서 좋았어요!"
         }
       ]
     }
@@ -1876,13 +1875,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험을 어떻게 납부하나요?",
-        "수강신청 정정은 어디서 하나요?"
+        "국민건강보험은 어떻게 납부하나요?",
+        "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요! 조금 더 자세한 설명이 있으면 좋겠어요."
+      "feedback": "유용한 정보 감사합니다! 더 궁금한 게 많아요."
     },
     {
       "user_id": "user_01",
@@ -1898,7 +1897,7 @@
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 정확하고 유용했어요. 감사합니다!"
+      "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요!"
     },
     {
       "user_id": "user_01",
@@ -1908,8 +1907,8 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 어떻게 납부하나요?",
-        "수강신청 정정은 언제까지 가능한가요?"
+        "국민건강보험 납부 방법을 알고 싶어요.",
+        "수강신청 정정은 언제 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
@@ -1924,13 +1923,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부는 어디서 하나요?",
-        "수강신청 정정은 언제까지 가능한가요?"
+        "국민건강보험은 어떻게 납부하나요?",
+        "수강신청 정정은 언제 가능하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요. 감사합니다!"
+      "feedback": "유용한 정보가 많아서 좋았어요!"
     },
     {
       "user_id": "user_01",
@@ -1940,13 +1939,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부 방법은 무엇인가요?",
-        "수강신청 정정을 어떻게 할 수 있나요?"
+        "국민건강보험 납부는 어디서 하나요?",
+        "수강신청 정정 기간은 언제인가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요!"
     },
     {
       "user_id": "user_01",
@@ -1956,13 +1955,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 어떻게 납부하나요?",
-        "수강신청 정정은 언제까지 가능하나요?"
+        "국민건강보험 납부 방법이 궁금해요.",
+        "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 명확해서 좋았어요!"
     },
     {
       "user_id": "user_01",
@@ -1972,13 +1971,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부 방법이 궁금해요.",
-        "수강신청 정정 기간은 언제인가요?"
+        "국민건강보험은 어떻게 납부하나요?",
+        "수강신청 정정은 언제까지 할 수 있나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "많은 정보를 얻어서 좋았어요!"
+      "feedback": "정보가 명확하고 이해하기 쉬웠어요."
     },
     {
       "user_id": "user_01",
@@ -1988,13 +1987,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 어떻게 납부하나요?",
-        "수강신청 정정은 어디서 하나요?"
+        "국민건강보험은 어떻게 납부하나요?",
+        "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 많이 도움이 되었어요, 감사합니다!"
     },
     {
       "user_id": "user_01",
@@ -2003,14 +2002,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부 방법이 궁금해요.",
-        "수강신청 정정은 어디에서 하나요?"
+        "비자 연장 절차가 어떻게 되나요?",
+        "국민건강보험은 어떻게 납부하나요?",
+        "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 명확해서 좋았습니다!"
     },
     {
       "user_id": "user_01",
@@ -2020,13 +2019,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험은 어떻게 납부하나요?",
-        "수강신청 정정을 하려면 무엇을 해야 하나요?"
+        "국민건강보험 납부는 어디에서 하나요?",
+        "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 잘 정리되어 있어서 이해하기 쉬웠어요."
     },
     {
       "user_id": "user_01",
@@ -2036,34 +2035,18 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부는 언제 해야 하나요?",
-        "수강신청 정정은 어떻게 하나요?"
-      ],
-      "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
-    },
-    {
-      "user_id": "user_01",
-      "date": "2026-05-13",
-      "day": 13,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "A",
-      "questions": [
-        "비자 연장 절차는 어떻게 되나요?",
-        "국민건강보험 납부 방법을 알려주세요.",
+        "국민건강보험 납부 방법이 궁금해요.",
         "수강신청 정정은 언제까지 가능한가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 잘 정리되어 있어서 이해하기 쉬웠어요."
     },
     {
       "user_id": "user_01",
-      "date": "2026-05-14",
-      "day": 14,
+      "date": "2026-05-13",
+      "day": 13,
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
@@ -2074,7 +2057,23 @@
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
+      "feedback": "정보가 명확하고 도움이 많이 되었어요."
+    },
+    {
+      "user_id": "user_01",
+      "date": "2026-05-14",
+      "day": 14,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "A",
+      "questions": [
+        "비자 연장 절차는 어떻게 되나요?",
+        "국민건강보험 납부 방법을 알고 싶어요.",
+        "수강신청 정정은 언제까지 가능한가요?"
+      ],
+      "used_quick_reply": false,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 잘 정리되어 있어서 도움이 많이 되었어요."
     },
     {
       "user_id": "user_02",
@@ -2083,14 +2082,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 어떻게 준비해요?",
-        "은행 계좌 개설은 어디서 해요?",
-        "주민등록 방법 알려주세요."
+        "비자 서류는 어디서 준비해요?",
+        "은행 계좌는 어떻게 개설해요?",
+        "주민등록은 어떻게 하나요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "도움 많이 받았어요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵지만 도움이 필요해요."
     },
     {
       "user_id": "user_02",
@@ -2099,14 +2098,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 준비 어떻게 해요?",
-        "은행 계좌 어떻게 개설해요?",
-        "주민등록 방법 알려주세요."
+        "비자 서류 어떻게 준비해요?",
+        "은행 계좌 어떻게 만들어요?",
+        "주민등록 어떻게 해요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "추천 카드가 있어서 좋았어요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵지만 도움이 필요해요."
     },
     {
       "user_id": "user_02",
@@ -2115,14 +2114,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 준비는 어떻게 해요?",
-        "은행 계좌 어떻게 열어요?",
-        "주민등록 신청은 어디서 해요?"
+        "비자 서류 어떻게 준비해요?",
+        "은행 계좌 어떻게 개설해요?",
+        "주민등록 어떻게 하나요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "한국어 질문이 쉬워서 좋았어요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려워요, 더 쉽게 설명해 주세요."
     },
     {
       "user_id": "user_02",
@@ -2131,14 +2130,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 어떻게 준비해요?",
-        "은행 계좌 어떻게 개설해요?",
-        "주민등록 방법 알려주세요."
+        "비자 서류는 어떻게 준비해요?",
+        "은행 계좌는 어떻게 개설해요?",
+        "주민등록은 어디서 하나요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "카드 덕분에 쉽게 질문했어요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵지만 도움이 필요해요."
     },
     {
       "user_id": "user_02",
@@ -2148,13 +2147,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "비자 서류 어떻게 준비해요?",
-        "은행 계좌 어떻게 개설해요?",
+        "은행 계좌 어떻게 만들어요?",
         "주민등록 방법 알려주세요."
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "도움 많이 됐어요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려워요, 도와주세요."
     },
     {
       "user_id": "user_02",
@@ -2163,14 +2162,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 어떻게 준비해요?",
-        "은행 계좌 어떻게 만들어요?",
-        "주민등록은 어떻게 하나요?"
+        "비자 서류는 어떻게 준비해요?",
+        "은행 계좌는 어떻게 개설해요?",
+        "주민등록은 어떻게 해요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "추천 카드가 많아서 좋았어요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 더 자세한 설명이 필요해요."
     },
     {
       "user_id": "user_02",
@@ -2179,14 +2178,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류는 어디서 준비해요?",
+        "비자 서류는 어떻게 준비해요?",
         "은행 계좌 어떻게 개설해요?",
-        "주민등록은 어떻게 하나요?"
+        "주민등록 방법은 뭐에요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "추천 카드가 있어서 좋아요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려워요. 더 쉽게 설명해 주세요."
     },
     {
       "user_id": "user_02",
@@ -2195,14 +2194,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 어떻게 준비해요?",
+        "비자 서류 준비 어떻게 해요?",
         "은행 계좌 어떻게 개설해요?",
-        "주민등록 어떻게 하나요?"
+        "주민등록 방법 알려주세요."
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "도움이 많이 됐어요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵지만 도움 필요해요."
     },
     {
       "user_id": "user_02",
@@ -2211,14 +2210,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 준비는 어떻게 하나요?",
-        "은행 계좌는 어떻게 개설하나요?",
-        "주민등록은 어디서 하나요?"
+        "비자 서류 어떻게 준비해요?",
+        "은행 계좌 어떻게 만들어요?",
+        "주민등록 방법 알려주세요."
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "유용한 정보 많이 얻었어요!"
+      "satisfaction": 4,
+      "feedback": "도움 많이 받았어요, 고마워요!"
     },
     {
       "user_id": "user_02",
@@ -2227,14 +2226,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 서류 준비 어떻게 해요?",
-        "은행 계좌 어떻게 개설해요?",
-        "주민등록 방법 알려주세요."
+        "비자 서류는 어떻게 준비해요?",
+        "은행 계좌는 어디서 만들 수 있어요?",
+        "주민등록은 어떻게 해요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "도움 많이 되었어요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려웠어요."
     },
     {
       "user_id": "user_03",
@@ -2244,13 +2243,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "D-2 비자를 E-7으로 전환하려면 어떤 절차가 필요한가요?",
-        "주 20시간 초과 아르바이트를 어떻게 신청하나요?",
-        "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?"
+        "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?",
+        "주 20시간 초과 아르바이트를 하려면 어떻게 해야 하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유익했어요, 감사합니다."
+      "feedback": "정보가 유용했어요, 감사합니다!"
     },
     {
       "user_id": "user_03",
@@ -2259,14 +2258,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "D-2 비자를 E-7으로 전환하려면 어떤 서류가 필요할까요?",
-        "주 20시간 이상의 아르바이트를 할 수 있는 방법은 무엇인가요?",
-        "졸업 후 구직 체류를 위해 꼭 알아야 할 사항은 무엇인가요?"
+        "D-2 비자를 E-7 비자로 전환하는 과정은 어떻게 되나요?",
+        "주 20시간 초과 아르바이트를 할 수 있는 방법이 있나요?",
+        "졸업 후 구직 체류를 어떻게 신청하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "유용한 정보가 많아서 좋았습니다."
+      "feedback": "정보가 유용했습니다, 감사합니다."
     },
     {
       "user_id": "user_03",
@@ -2275,14 +2274,13 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "D-2 비자를 E-7으로 전환하는 절차는 어떻게 되나요?",
-        "주 20시간 초과 아르바이트를 허가받으려면 어떤 조건이 필요한가요?",
-        "졸업 후 구직 체류를 위해 필요한 서류는 무엇인가요?"
+        "D-2 비자를 E-7으로 전환하려면 어떤 절차가 필요한가요?",
+        "졸업 후 구직 체류에 대한 정보가 궁금합니다."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정확한 정보가 필요했는데 도움이 많이 됐어요."
+      "feedback": "명확한 답변이 도움이 됐습니다."
     },
     {
       "user_id": "user_04",
@@ -2292,13 +2290,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "정부 장학금 유지 조건은 뭐예요?",
-        "인턴십 비자 허용돼요?",
-        "월세 계약 어떻게 하나요?"
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약은 어떻게 하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "빠른 답변이 좋아요!"
+      "feedback": "정보가 유용했어요! 감사합니다!"
     },
     {
       "user_id": "user_04",
@@ -2308,177 +2306,18 @@
       "variant_chat_layout": "B",
       "questions": [
         "정부 장학금 유지 조건은 무엇인가요?",
-        "인턴십 비자 허용 여부가 궁금해요."
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "빠른 답변이 많아서 좋았어요!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-03",
-      "day": 3,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 어떻게 되나요?",
-        "인턴십 비자 허용 여부를 알고 싶어요.",
-        "월세 계약을 어떻게 하면 좋을까요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "유용한 정보가 많아서 좋았어요!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-04",
-      "day": 4,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 뭐예요?",
-        "인턴십 비자 허용 여부 알고 싶어요.",
-        "월세 계약 어떻게 해야 하나요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "정보가 빨리 나와서 좋았어요!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-05",
-      "day": 5,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 무엇인가요?",
-        "인턴십 비자 허용 여부가 궁금해요.",
-        "월세 계약은 어떻게 해야 하나요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "유용한 정보 감사해요! 더 알고 싶어요."
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-06",
-      "day": 6,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 뭐예요?",
-        "인턴십 비자 허용되나요?",
-        "월세 계약 어떻게 해요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "빠른 답변 감사합니다!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-07",
-      "day": 7,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 무엇인가요?",
-        "인턴십 비자 허용 여부는 어떻게 되나요?",
-        "월세 계약할 때 주의할 점은 무엇인가요?"
-      ],
-      "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 유용했어요! 더 많은 팁이 필요해요."
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-08",
-      "day": 8,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 무엇인가요?",
         "인턴십 비자 허용 여부가 궁금해요.",
         "월세 계약 시 주의할 점은 뭐죠?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 유용했어요!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-09",
-      "day": 9,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 뭐예요?",
-        "인턴십 비자 허용되나요?",
-        "월세 계약할 때 주의할 점은?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 유용했어요, 감사합니다!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-10",
-      "day": 10,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 무엇인가요?",
-        "인턴십 비자 허용 여부는 어떻게 되나요?",
-        "월세 계약 시 주의할 점은 무엇인가요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
       "satisfaction": 5,
-      "feedback": "정확한 답변이 빨리 나와서 좋았어요!"
+      "feedback": "정보가 정말 유용했어요!"
     },
     {
       "user_id": "user_04",
-      "date": "2026-05-11",
-      "day": 11,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건이 뭐예요?",
-        "인턴십 비자 허용 여부는 어떻게 되나요?",
-        "월세 계약할 때 주의할 점은 무엇인가요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 유용했어요! 더 간단하게 설명해주면 좋겠어요."
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-13",
-      "day": 13,
-      "variant_welcome_message": "A",
-      "variant_chat_layout": "B",
-      "questions": [
-        "정부 장학금 유지 조건은 무엇인가요?",
-        "인턴십 비자 허용 여부는 어떻게 되나요?",
-        "월세 계약 시 주의할 점은 무엇인가요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 빨리 나와서 좋았어요!"
-    },
-    {
-      "user_id": "user_04",
-      "date": "2026-05-14",
-      "day": 14,
+      "date": "2026-05-03",
+      "day": 3,
       "variant_welcome_message": "A",
       "variant_chat_layout": "B",
       "questions": [
@@ -2489,7 +2328,166 @@
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "빠른 답변이 좋아서 만족해!"
+      "feedback": "정보가 빨리 나와서 좋았어!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-04",
+      "day": 4,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 무엇인가요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약 시 주의할 점은 어떤 게 있을까요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 유용했어요, 감사합니다!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-05",
+      "day": 5,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 뭐예요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약할 때 주의할 점이 뭐죠?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 5,
+      "feedback": "정보가 정말 유용했어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-06",
+      "day": 6,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 뭐예요?",
+        "인턴십 비자 허용되나요?",
+        "월세 계약 시 주의할 점은 무엇인가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 5,
+      "feedback": "정보가 정말 유용했어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-07",
+      "day": 7,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 뭐예요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약할 때 주의할 점은 무엇인가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 빠르게 나와서 좋았어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-08",
+      "day": 8,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "한국에서 인턴십 비자는 어떻게 되나요?",
+        "정부 장학금 유지하려면 어떤 조건이 필요한가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 빨리 나와서 좋았어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-09",
+      "day": 9,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 무엇인가요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약 시 주의할 점은 어떤 게 있을까요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 빨리 나와서 좋았어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-10",
+      "day": 10,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 무엇인가요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약할 때 주의할 점은 무엇인가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 유용했어요, 감사합니다!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-11",
+      "day": 11,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 무엇인가요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약 시 주의할 점이 뭐예요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 유용했어요, 감사합니다!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-13",
+      "day": 13,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 무엇인가요?",
+        "인턴십 비자에 대해 알고 싶어요.",
+        "월세 계약할 때 주의할 점은 뭐예요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 빨리 나와서 좋았어요!"
+    },
+    {
+      "user_id": "user_04",
+      "date": "2026-05-14",
+      "day": 14,
+      "variant_welcome_message": "A",
+      "variant_chat_layout": "B",
+      "questions": [
+        "정부 장학금 유지 조건은 뭐예요?",
+        "인턴십 비자 허용 여부가 궁금해요.",
+        "월세 계약할 때 주의할 점은 무엇인가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 유용했어요!"
     },
     {
       "user_id": "user_05",
@@ -2498,14 +2496,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장 어떻게 하나요?",
-        "병원 가는 방법은?",
-        "교통카드 충전은 어디서 하나요?"
+        "비자 연장 어떻게 해요?",
+        "병원 가면 뭐 필요해요?",
+        "교통카드 어떻게 충전해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "한국 생활이 조금 더 쉬워졌어요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려워요. 쉽게 설명해 주세요."
     },
     {
       "user_id": "user_05",
@@ -2515,13 +2513,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 연장 어떻게 해요?",
-        "병원 가려면 뭐 필요한가요?",
+        "병원 가는 방법 알려줘요.",
         "교통카드 충전 어디서 해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 간단하고 좋았어요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려워서 힘들었어요."
     },
     {
       "user_id": "user_05",
@@ -2530,14 +2528,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장은 어떻게 해요?",
-        "병원 가는 방법을 알고 싶어요.",
-        "교통카드 충전은 어디서 해요?"
+        "비자 연장 어떻게 해요?",
+        "병원 가려면 뭐 알아야 해요?",
+        "교통카드 충전 어디서 해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 간단해서 좋았어요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "정보가 조금 복잡했어요."
     },
     {
       "user_id": "user_05",
@@ -2546,14 +2544,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장은 어떻게 하나요?",
-        "병원에서는 어떻게 진료를 받나요?",
-        "교통카드는 어디서 충전하나요?"
+        "비자 연장 방법은?",
+        "병원 가는 방법은?",
+        "교통카드 어떻게 충전해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 간단하고 도움이 많이 되었어요."
+      "task_completed": false,
+      "satisfaction": 2,
+      "feedback": "정보가 복잡해서 이해하기 어려웠어요."
     },
     {
       "user_id": "user_05",
@@ -2562,14 +2560,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장 어떻게 해요?",
-        "병원 가는 방법 알려주세요.",
-        "교통카드 충전은 어디서 해요?"
+        "비자 연장은 어떻게 하나요?",
+        "병원 이용할 때 필요한 것 있나요?",
+        "교통카드 충전은 어디서 하나요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 간단해서 좋았어요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어려웠어요. 더 쉬운 방법이 있었으면 좋겠어요."
     },
     {
       "user_id": "user_05",
@@ -2578,14 +2576,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장 어떻게 해요?",
-        "병원 가려면 어떻게 해야 하나요?",
-        "교통카드 충전은 어디서 해요?"
+        "비자 연장 방법은?",
+        "병원 가는 방법은?",
+        "교통카드 어떻게 충전해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 간단해서 좋았어요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵고 복잡했어요."
     },
     {
       "user_id": "user_05",
@@ -2594,14 +2592,14 @@
       "variant_welcome_message": "A",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 연장은 어떻게 하나요?",
-        "병원 이용 방법을 알고 싶어요.",
-        "교통카드 충전은 어디서 하나요?"
+        "비자 연장 어떻게 해요?",
+        "병원 가려면 뭐 해야 해요?",
+        "교통카드 어떻게 충전해요?"
       ],
       "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "도움이 많이 되었어요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "조금 어렵고 복잡해요."
     },
     {
       "user_id": "user_06",
@@ -2611,13 +2609,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "포트폴리오 제출 방법은 무엇인가요?",
-        "디자인 회사 인턴십 비자 신청은 어떻게 하나요?",
-        "한국에서 취업 준비를 위한 팁이 있을까요?"
+        "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+        "한국에서 취업 준비를 어떻게 시작해야 하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "디자인 관련 정보가 많아서 좋았어요!"
+      "satisfaction": 4,
+      "feedback": "디자인 관련 정보가 잘 정리되어 있어서 좋았어요!"
     },
     {
       "user_id": "user_06",
@@ -2626,9 +2624,25 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
+        "포트폴리오 제출은 어떻게 하나요?",
+        "디자인 회사 인턴십 비자는 어떻게 준비해요?",
+        "한국에서 취업하려면 어떤 절차가 필요한가요?"
+      ],
+      "used_quick_reply": true,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
+    },
+    {
+      "user_id": "user_06",
+      "date": "2026-05-05",
+      "day": 5,
+      "variant_welcome_message": "B",
+      "variant_chat_layout": "B",
+      "questions": [
         "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자 신청 방법은?",
-        "한국 취업 준비에 필요한 자료는 무엇인가요?"
+        "디자인 회사 인턴십을 위해 필요한 서류는 무엇인가요?",
+        "한국에서 취업 준비를 위한 좋은 방법은 무엇인가요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
@@ -2637,34 +2651,19 @@
     },
     {
       "user_id": "user_06",
-      "date": "2026-05-05",
-      "day": 5,
-      "variant_welcome_message": "B",
-      "variant_chat_layout": "B",
-      "questions": [
-        "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자는 어떻게 신청하나요?"
-      ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "디자인 관련 정보가 유용했어요!"
-    },
-    {
-      "user_id": "user_06",
       "date": "2026-05-06",
       "day": 6,
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자 관련 정보가 필요해요.",
-        "한국에서 취업 준비를 어떻게 시작해야 할까요?"
+        "포트폴리오 제출 방법은 무엇인가요?",
+        "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+        "한국에서 취업 준비를 어떻게 시작해야 하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "디자인 관련 정보가 매우 유용했어요!"
+      "satisfaction": 4,
+      "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
     },
     {
       "user_id": "user_06",
@@ -2673,14 +2672,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자 신청 방법이 궁금해요.",
-        "한국에서 취업 준비를 어떻게 시작해야 하나요?"
+        "포트폴리오 제출을 위한 절차는 어떻게 되나요?",
+        "디자인 회사 인턴십 비자에 대해 알고 싶어요.",
+        "한국에서 취업 준비는 어떻게 시작하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "디자인 관련 정보가 많아서 도움이 많이 됐어요!"
+      "satisfaction": 4,
+      "feedback": "정보가 잘 정리되어 있어서 좋았어요!"
     },
     {
       "user_id": "user_06",
@@ -2689,14 +2688,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 방법은 무엇인가요?",
-        "디자인 회사 인턴십 비자에 대해 알고 싶어요.",
-        "한국에서 취업 준비를 어떻게 시작해야 하나요?"
+        "포트폴리오 제출 방법이 궁금해요.",
+        "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
+        "한국에서 취업 준비를 할 때 유용한 팁이 있을까요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "정보가 정말 유용했어요. 감사합니다!"
+      "satisfaction": 4,
+      "feedback": "디자인 관련 정보가 많아서 좋았어요!"
     },
     {
       "user_id": "user_06",
@@ -2705,14 +2704,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자 신청 방법을 알려주세요.",
-        "한국에서 취업 준비를 어떻게 시작해야 할까요?"
+        "디자인 회사 인턴십 비자 발급 방법은?",
+        "포트폴리오 제출 마감일이 언제인가요?",
+        "한국 취업 준비를 위해 어떤 자료를 준비해야 하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "디자인 관련 정보가 많아서 정말 유용해요!"
+      "satisfaction": 4,
+      "feedback": "디자인 관련 정보가 많아서 좋았어요!"
     },
     {
       "user_id": "user_06",
@@ -2721,14 +2720,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 마감일이 언제인가요?",
-        "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
-        "한국에서 취업 준비를 시작하려면 무엇을 해야 하나요?"
+        "포트폴리오 제출 마감일은 언제인가요?",
+        "디자인 회사 인턴십 비자 신청 방법을 알고 싶어요.",
+        "한국에서 취업을 준비하는 데 필요한 서류는 무엇인가요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "디자인 관련 정보가 많아서 정말 유용해요!"
+      "feedback": "정보가 정말 유용했어요! 감사합니다."
     },
     {
       "user_id": "user_06",
@@ -2737,14 +2736,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "포트폴리오 제출 마감일이 언제인가요?",
-        "디자인 회사 인턴십 비자는 어떻게 신청하나요?",
-        "한국에서 취업 준비를 위한 팁이 있나요?"
+        "포트폴리오 제출 마감일은 언제인가요?",
+        "디자인 회사 인턴십 비자 신청 방법을 알려주세요.",
+        "한국에서 취업 준비를 위해 어떤 자료를 준비해야 하나요?"
       ],
-      "used_quick_reply": false,
+      "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "디자인 관련 정보가 많아서 좋았어요!"
+      "satisfaction": 5,
+      "feedback": "정말 유익한 정보였어요! 감사합니다."
     },
     {
       "user_id": "user_06",
@@ -2754,13 +2753,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "포트폴리오 제출 마감일은 언제인가요?",
-        "디자인 회사 인턴십 비자 신청 방법을 알고 싶어요.",
+        "디자인 회사 인턴십 비자 신청 방법은?",
         "한국에서 취업 준비를 어떻게 시작해야 하나요?"
       ],
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "유용한 정보가 많아서 좋았어요!"
+      "feedback": "정보가 잘 정리되어 있어서 도움이 되었어요!"
     },
     {
       "user_id": "user_07",
@@ -2769,14 +2768,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 무엇이 필요합니까?",
-        "동아리 등록 방법이 궁금합니다.",
-        "학교 행사 일정은 어떻게 확인하나요?"
+        "비자 갱신 서류는 무엇이 필요하나요?",
+        "동아리 등록 방법을 알고 싶어요.",
+        "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 정확하고 유용했습니다."
+      "feedback": "정보가 정확해서 좋았습니다."
     },
     {
       "user_id": "user_07",
@@ -2785,14 +2784,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 무엇이 필요한가요?",
+        "비자 갱신에 필요한 서류는 무엇인가요?",
         "동아리 등록 방법을 알려주세요.",
         "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 정확하면 좋겠습니다."
+      "feedback": "정보가 정확해서 좋았습니다."
     },
     {
       "user_id": "user_07",
@@ -2802,13 +2801,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 갱신 서류는 무엇이 필요한가요?",
-        "동아리 등록 방법이 궁금해요.",
+        "동아리 등록 방법이 궁금합니다.",
         "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 정확하고 간결해서 좋았어요."
+      "feedback": "정보가 정확해서 좋았습니다."
     },
     {
       "user_id": "user_07",
@@ -2817,24 +2816,8 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 어떤 것이 필요한가요?",
-        "동아리 등록 방법이 궁금해요.",
-        "학교 행사 일정은 어디서 확인하나요?"
-      ],
-      "used_quick_reply": false,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "정보가 정확해서 좋았어요."
-    },
-    {
-      "user_id": "user_07",
-      "date": "2026-05-06",
-      "day": 6,
-      "variant_welcome_message": "B",
-      "variant_chat_layout": "A",
-      "questions": [
-        "비자 갱신 서류는 무엇이 필요하나요?",
-        "동아리 등록 절차는 어떻게 되나요?",
+        "비자 갱신 서류는 무엇이 필요한가요?",
+        "동아리 등록 방법을 알고 싶어요.",
         "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
@@ -2844,19 +2827,35 @@
     },
     {
       "user_id": "user_07",
+      "date": "2026-05-06",
+      "day": 6,
+      "variant_welcome_message": "B",
+      "variant_chat_layout": "A",
+      "questions": [
+        "비자 갱신 서류는 무엇인가요?",
+        "동아리 등록 방법을 알고 싶어요.",
+        "학교 행사 일정은 어디서 확인하나요?"
+      ],
+      "used_quick_reply": false,
+      "task_completed": true,
+      "satisfaction": 4,
+      "feedback": "정확한 정보가 도움이 됐어요."
+    },
+    {
+      "user_id": "user_07",
       "date": "2026-05-07",
       "day": 7,
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 무엇인가요?",
-        "동아리 등록 방법이 궁금해요.",
-        "학교 행사 일정은 어떻게 확인하나요?"
+        "비자 갱신에 필요한 서류는 무엇인가요?",
+        "동아리 등록 절차는 어떻게 되나요?",
+        "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 명확하고 좋았어요."
+      "feedback": "정보가 정확해서 좋았습니다."
     },
     {
       "user_id": "user_07",
@@ -2865,9 +2864,9 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 무엇이 필요하나요?",
-        "동아리 등록 방법을 알고 싶어요.",
-        "학교 행사 일정은 어디서 확인하나요?"
+        "비자 갱신 서류는 무엇이 필요한가요?",
+        "동아리 등록 방법이 궁금해요.",
+        "학교 행사 일정은 어디에서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
@@ -2881,14 +2880,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신에 필요한 서류는 무엇인가요?",
-        "동아리 등록 방법을 알고 싶어요.",
+        "비자 갱신 서류는 어떤 것들이 필요한가요?",
+        "동아리 등록 방법을 알려주세요.",
         "학교 행사 일정은 어디서 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 정확하고 도움이 되었습니다."
+      "feedback": "정보가 정확해서 좋았어요."
     },
     {
       "user_id": "user_07",
@@ -2897,14 +2896,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "비자 갱신 서류는 무엇이 필요한가요?",
-        "동아리 등록 방법을 알고 싶어요.",
-        "학교 행사 일정은 어디에서 확인하나요?"
+        "비자 갱신 서류는 무엇인가요?",
+        "동아리 등록 방법을 알려주세요.",
+        "학교 행사 일정은 어떻게 확인하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 명확하고 유용했어요."
+      "feedback": "정보가 정확하면 좋겠습니다."
     },
     {
       "user_id": "user_07",
@@ -2914,13 +2913,13 @@
       "variant_chat_layout": "A",
       "questions": [
         "비자 갱신 서류는 무엇이 필요한가요?",
-        "동아리 등록 방법은 어떻게 되나요?",
-        "학교 행사 일정은 어디에서 확인하나요?"
+        "동아리 등록 방법을 알고 싶어요.",
+        "학교 행사 일정은 어디에서 확인할 수 있나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 명확하고 좋았습니다."
+      "feedback": "정보가 정확하고 도움이 되었어요."
     },
     {
       "user_id": "user_08",
@@ -2930,13 +2929,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "교환학생 등록 절차는 뭐예요?",
-        "한국에서 영어로 지원받을 수 있나요?",
-        "주요 관광지는 어디예요?"
+        "영어 지원 있어요?",
+        "서울의 관광지 추천해 주세요."
       ],
       "used_quick_reply": true,
-      "task_completed": true,
+      "task_completed": false,
       "satisfaction": 3,
-      "feedback": "영어 지원이 필요해요!"
+      "feedback": "한국어가 어려워서 힘들었어요."
     },
     {
       "user_id": "user_08",
@@ -2945,14 +2944,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록은 어떻게 하나요?",
-        "영어 지원이 있나요?",
-        "서울의 주요 관광지는 어디인가요?"
+        "교환학생 등록 절차는 뭐예요?",
+        "영어 지원 있어요?",
+        "관광지 추천해 주세요."
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "앱이 유용하지만 영어 지원이 필요해요."
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "앱이 좀 더 영어로 지원되면 좋겠어요."
     },
     {
       "user_id": "user_08",
@@ -2961,14 +2960,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록 어떻게 하나요?",
-        "영어로 지원하나요?",
-        "서울의 관광지는 어디인가요?"
+        "교환학생 등록 절차는 어떻게 되나요?",
+        "영어 지원이 있나요?",
+        "서울의 주요 관광지는 어디인가요?"
       ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "영어 지원이 더 많았으면 좋겠어요!"
+      "used_quick_reply": false,
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어려워서 힘들어요."
     },
     {
       "user_id": "user_08",
@@ -2977,14 +2976,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록 절차는 어떻게 되나요?",
+        "교환학생 등록 절차는 무엇인가요?",
         "영어 지원이 있나요?",
-        "서울의 주요 관광지는 어디인가요?"
+        "주요 관광지는 어디인가요?"
       ],
-      "used_quick_reply": true,
-      "task_completed": true,
+      "used_quick_reply": false,
+      "task_completed": false,
       "satisfaction": 3,
-      "feedback": "한국어가 어렵지만, 정보는 유용했어요!"
+      "feedback": "한국어가 어려워서 조금 힘들었어요."
     },
     {
       "user_id": "user_08",
@@ -2993,14 +2992,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록 방법은?",
+        "교환학생 등록 절차는 뭐예요?",
         "영어 지원이 있나요?",
-        "관광지 추천해 주세요."
+        "주요 관광지는 어디예요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "영어 지원이 필요해요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어려워서 조금 힘들어요."
     },
     {
       "user_id": "user_08",
@@ -3009,14 +3008,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록은 어떻게 하나요?",
+        "교환학생 등록 절차는 어떻게 되나요?",
         "영어 지원이 있나요?",
-        "관광지 추천해 주세요."
+        "서울의 주요 관광지는 어디인가요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "한국어가 어려워요, 하지만 앱은 괜찮아요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어려워서 힘들었어요."
     },
     {
       "user_id": "user_08",
@@ -3025,14 +3024,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록은 어떻게 하나요?",
-        "영어 지원이 있나요?",
+        "교환학생 등록 절차는 무엇인가요?",
+        "학교에서 영어 지원이 있나요?",
         "서울의 주요 관광지는 어디인가요?"
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "영어 지원이 있으면 좋겠어요!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어려워서 좀 힘들었어요."
     },
     {
       "user_id": "user_08",
@@ -3041,14 +3040,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록 어떻게 해요?",
-        "영어로 도와줄 수 있어요?",
-        "서울 관광지 어디가 좋나요?"
+        "교환학생 등록 절차는 어떻게 되나요?",
+        "영어 지원이 있나요?",
+        "관광지 추천해 주세요."
       ],
       "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "영어 지원이 필요해요, 감사합니다!"
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어렵고 정보가 복잡해요."
     },
     {
       "user_id": "user_08",
@@ -3058,13 +3057,13 @@
       "variant_chat_layout": "B",
       "questions": [
         "교환학생 등록 절차는 어떻게 되나요?",
-        "서울에서 추천 관광지는 어디인가요?",
-        "영어 지원이 있나요?"
+        "영어 지원이 있나요?",
+        "추천 관광지는 어디인가요?"
       ],
-      "used_quick_reply": false,
+      "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "영어 지원이 더 많으면 좋겠어요!"
+      "feedback": "정보가 빠르게 나와서 좋았어요!"
     },
     {
       "user_id": "user_08",
@@ -3073,14 +3072,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "교환학생 등록 어떻게 하나요?",
-        "한국에서 영어 지원 있나요?",
-        "서울의 유명한 관광지는 어디인가요?"
+        "교환학생 등록 절차는 어떻게 되나요?",
+        "영어로 지원 가능한가요?",
+        "서울의 주요 관광지는 어디인가요?"
       ],
-      "used_quick_reply": true,
-      "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "추천 카드가 있어 좋았어요. 영어 지원도 있었으면 좋겠어요."
+      "used_quick_reply": false,
+      "task_completed": false,
+      "satisfaction": 3,
+      "feedback": "한국어가 어려워서 조금 힘들었어요."
     },
     {
       "user_id": "user_09",
@@ -3089,14 +3088,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "한국에서 연구비 지원을 받으려면 어떤 절차가 필요한가요?",
-        "논문 심사 일정을 어떻게 관리할 수 있을까요?",
-        "비자 만료 전에 연장하는 방법은 무엇인가요?"
+        "연구비 지원 신청은 어떻게 하나요?",
+        "논문 심사 일정은 어떻게 관리하나요?",
+        "비자 연장 절차는 무엇인가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유익했지만 더 자세한 설명이 필요해요."
+      "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
     },
     {
       "user_id": "user_09",
@@ -3105,14 +3104,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "연구비 지원 행정에 대한 정보가 필요해요.",
-        "논문 심사 일정 관리 방법을 알고 싶어요.",
-        "비자 연장 절차에 대해 자세히 설명해 주세요."
+        "연구비 지원 행정에 대한 정보는 어디서 찾을 수 있나요?",
+        "논문 심사 일정은 어떻게 관리하나요?",
+        "비자 연장 절차를 설명해 주세요."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유익했지만 더 구체적인 내용이 필요해요."
+      "feedback": "정보가 잘 정리되어 있어서 좋았습니다."
     },
     {
       "user_id": "user_09",
@@ -3121,14 +3120,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "한국에서 연구비 지원을 받는 방법은 무엇인가요?",
+        "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
         "논문 심사 일정을 어떻게 관리할 수 있나요?",
-        "비자 연장 절차에 대해 자세히 알고 싶습니다."
+        "비자 연장 절차는 어떻게 되나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만, 좀 더 자세한 설명이 필요합니다."
+      "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
     },
     {
       "user_id": "user_09",
@@ -3139,12 +3138,12 @@
       "questions": [
         "연구비 지원을 받으려면 어떤 절차가 필요한가요?",
         "논문 심사 일정은 어떻게 관리하나요?",
-        "비자 연장은 어떻게 신청하나요?"
+        "비자 연장 신청은 어디서 하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만 더 구체적인 설명이 필요해요."
+      "feedback": "정보가 유용했어요, 더 자세한 설명이 필요해요."
     },
     {
       "user_id": "user_09",
@@ -3153,14 +3152,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "연구비 지원 행정에 대한 자세한 정보가 필요해요.",
-        "논문 심사 일정은 어떻게 관리하나요?",
-        "비자 연장 절차에 대해 설명해 주세요."
+        "연구비 지원 행정에 필요한 서류는 무엇인가요?",
+        "논문 심사 일정 관리는 어떻게 하나요?",
+        "비자 연장 절차에 대해 알고 싶어요."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 더 필요해요. 상세 설명이 좋습니다."
+      "feedback": "정보가 유용했지만, 더 구체적인 설명이 필요해요."
     },
     {
       "user_id": "user_09",
@@ -3169,14 +3168,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
-        "논문 심사 일정은 어떻게 관리하나요?",
-        "비자 연장은 어떤 절차가 필요한가요?"
+        "연구비 지원 행정에 대해 알려주세요.",
+        "논문 심사 일정 관리는 어떻게 하나요?",
+        "비자 연장 절차가 궁금합니다."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "상세한 정보가 필요합니다. 더 알고 싶어요."
+      "feedback": "정보가 유용했지만, 더 자세한 설명이 필요합니다."
     },
     {
       "user_id": "user_09",
@@ -3185,14 +3184,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "논문 심사 일정은 어떻게 관리하나요?",
-        "비자 연장 절차에 대해 알고 싶어요.",
-        "연구비 지원을 받으려면 어떤 서류가 필요한가요?"
+        "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
+        "논문 심사 일정을 관리하는 방법은 무엇인가요?",
+        "비자 연장 절차에 대해 알려주세요."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만 좀 더 자세한 설명이 필요해요."
+      "feedback": "정보가 상세해서 좋았어요. 더 알고 싶어요."
     },
     {
       "user_id": "user_09",
@@ -3201,14 +3200,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "연구비 지원 행정에 대해 더 알고 싶어요.",
+        "연구비 지원 행정에 대해 설명해 주세요.",
         "논문 심사 일정은 어떻게 관리하나요?",
-        "비자 연장 절차는 어떻게 되나요?"
+        "비자 연장 절차는 무엇인가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만 좀 더 구체적인 설명이 필요해요."
+      "feedback": "정보가 잘 정리되어 있어서 좋았습니다."
     },
     {
       "user_id": "user_09",
@@ -3217,14 +3216,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "연구비 지원 행정 절차는 어떻게 되나요?",
-        "논문 심사 일정은 언제 결정되나요?",
-        "비자 연장 신청은 어디서 하나요?"
+        "한국에서 연구비 지원을 받으려면 어떻게 해야 하나요?",
+        "논문 심사 일정을 어떻게 관리할 수 있나요?",
+        "비자 만료 전에 연장하는 방법은 무엇인가요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만 더 자세한 설명이 필요해요."
+      "feedback": "정보가 유용했지만 더 구체적인 답변을 원합니다."
     },
     {
       "user_id": "user_09",
@@ -3233,14 +3232,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "A",
       "questions": [
-        "연구비 지원 행정에 대해 더 알고 싶습니다.",
-        "논문 심사 일정을 어떻게 관리하나요?",
-        "비자 연장은 어떻게 신청하나요?"
+        "연구비 지원을 받으려면 어떤 절차가 필요한가요?",
+        "논문 심사 일정을 어떻게 관리할 수 있을까요?",
+        "비자 연장 신청은 언제 시작해야 하나요?"
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 4,
-      "feedback": "정보가 유용했지만, 더 자세한 설명이 필요해요."
+      "feedback": "정보를 잘 얻어서 만족합니다. 더 자세한 설명이 필요해요."
     },
     {
       "user_id": "user_10",
@@ -3249,14 +3248,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장을 어떻게 자동화할 수 있나요?",
-        "TOPIK 시험 등록은 어디서 하나요?",
-        "프랑스 정부 장학금에 대해 더 알고 싶어요."
+        "비자 연장 자동화에 대해 알고 싶어요.",
+        "TOPIK 시험 등록 과정은 어떻게 되나요?",
+        "프랑스 정부 장학금과 관련된 정보가 필요해요."
       ],
-      "used_quick_reply": false,
+      "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "정말 유용한 정보가 많아서 매우 만족했습니다!"
+      "feedback": "정확하고 유용한 정보가 많아서 좋았어요!"
     },
     {
       "user_id": "user_10",
@@ -3265,14 +3264,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장 자동화에 대한 구체적인 절차는 무엇인가요?",
-        "TOPIK 시험 등록 시 주의해야 할 점은 무엇인가요?",
+        "비자 연장을 위한 필요한 서류는 무엇인가요?",
+        "TOPIK 시험 등록은 어떻게 하나요?",
         "프랑스 정부 장학금과 관련된 정보는 어디서 찾을 수 있나요?"
       ],
-      "used_quick_reply": false,
+      "used_quick_reply": true,
       "task_completed": true,
-      "satisfaction": 4,
-      "feedback": "앱이 유용하지만, 좀 더 세부적인 정보가 필요해요."
+      "satisfaction": 5,
+      "feedback": "정보가 매우 유용하고 도움이 되었습니다!"
     },
     {
       "user_id": "user_10",
@@ -3281,14 +3280,13 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장 절차는 어떻게 되나요?",
-        "TOPIK 시험 등록은 언제 시작하나요?",
-        "프랑스 정부 장학금 신청 방법이 궁금해요."
+        "비자 연장 자동화에 대해 더 알고 싶어요.",
+        "TOPIK 시험 등록 절차가 궁금해요."
       ],
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "앱이 정말 유용해요! 더 많은 정보가 필요해요."
+      "feedback": "정확한 정보 덕분에 매우 만족스러웠어요!"
     },
     {
       "user_id": "user_10",
@@ -3297,14 +3295,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장 자동화에 대해 더 알고 싶어요.",
-        "TOPIK 시험 등록 절차는 어떻게 되나요?",
-        "프랑스 정부 장학금과 관련된 정보가 필요해요."
+        "비자 연장을 위한 서류는 무엇이 필요할까요?",
+        "TOPIK 시험 등록은 어떻게 하나요?",
+        "프랑스 정부 장학금에 대해 더 알고 싶어요."
       ],
       "used_quick_reply": false,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "앱이 정말 유용하고, 필요한 정보를 쉽게 찾을 수 있었어요."
+      "feedback": "정보가 명확하고 유용했어요!"
     },
     {
       "user_id": "user_10",
@@ -3313,14 +3311,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장을 위한 서류는 무엇이 필요한가요?",
-        "TOPIK 시험 등록은 어떻게 하나요?",
-        "프랑스 정부 장학금의 신청 방법은 무엇인가요?"
+        "비자 연장 자동화는 어떻게 하나요?",
+        "TOPIK 시험 등록 절차가 궁금해요.",
+        "프랑스 정부 장학금 신청 방법을 알고 싶어요."
       ],
-      "used_quick_reply": false,
+      "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "정확한 정보가 필요했는데, 정말 유용했어요!"
+      "feedback": "정확한 정보 덕분에 도움이 많이 되었어요!"
     },
     {
       "user_id": "user_10",
@@ -3329,14 +3327,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장 자동화 과정은 어떻게 되나요?",
-        "TOPIK 시험 등록은 언제부터 가능한가요?",
+        "비자 연장 절차는 어떻게 되나요?",
+        "TOPIK 시험 등록은 언제까지 하나요?",
         "프랑스 정부 장학금에 대해 더 알고 싶어요."
       ],
       "used_quick_reply": false,
       "task_completed": true,
-      "satisfaction": 5,
-      "feedback": "정확하고 빠른 답변이 좋았어요!"
+      "satisfaction": 4,
+      "feedback": "정보가 유용하고 도움이 많이 되었어요!"
     },
     {
       "user_id": "user_10",
@@ -3345,14 +3343,14 @@
       "variant_welcome_message": "B",
       "variant_chat_layout": "B",
       "questions": [
-        "비자 연장 자동화에 대해 더 알고 싶어요.",
-        "TOPIK 시험 등록 절차는 어떻게 되나요?",
-        "프랑스 정부 장학금에 대해 문의하고 싶습니다."
+        "비자 연장 절차는 어떻게 되나요?",
+        "TOPIK 시험 등록 방법을 알려주세요.",
+        "프랑스 정부 장학금에 대해 정보가 더 필요해요."
       ],
       "used_quick_reply": true,
       "task_completed": true,
       "satisfaction": 5,
-      "feedback": "앱이 정말 유용하네요! 더 많은 정보가 필요해요."
+      "feedback": "정말 유용한 정보들이 많아서 좋았어요!"
     }
   ]
 }
