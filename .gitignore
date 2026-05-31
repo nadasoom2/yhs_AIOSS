@@ -6,6 +6,7 @@
 node_modules/
 front/app/node_modules/
 front/app/dist/
+front/app/coverage/
 
 __pycache__/
 */__pycache__/
